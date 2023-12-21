@@ -12,7 +12,6 @@ class Cell
 
     public:
 
-
 };
 
 #endif CELL
