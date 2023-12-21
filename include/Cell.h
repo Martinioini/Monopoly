@@ -1,7 +1,6 @@
 #ifndef CELL
 #define CELL.H
 
-
 class Cell
 {
     private:
@@ -9,7 +8,7 @@ class Cell
         std::string category;     //categoria E, S, L, P, void
         int house_level;        //livello immobile 0(nessuna casa), 1(casa normale), 2(albergo)
         int proprietary;        //player propetario
-        std::string position;
+        std::string position;    //posizione nel tabellone
 
     public:
 
