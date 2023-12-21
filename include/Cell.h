@@ -13,6 +13,7 @@ class Cell
 
     public:
     int caccola;
+    double cazzo;
 
 };
 
