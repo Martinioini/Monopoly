@@ -12,7 +12,7 @@ class Cell
         std::string position;
 
     public:
-
+    int caccola;
 
 };
 
