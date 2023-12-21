@@ -12,9 +12,6 @@ class Cell
         std::string position;
 
     public:
-    int caccola;
-    double cazzo;
-    int negro;
 
 };
 
