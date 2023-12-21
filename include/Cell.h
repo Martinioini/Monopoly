@@ -14,6 +14,7 @@ class Cell
     public:
     int caccola;
     double cazzo;
+    int negro;
 
 };
 
