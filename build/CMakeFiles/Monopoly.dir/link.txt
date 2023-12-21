@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libMonopoly.so -o libMonopoly.so CMakeFiles/Monopoly.dir/src/Cell.cpp.o CMakeFiles/Monopoly.dir/src/Map.cpp.o 

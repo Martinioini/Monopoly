@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/e/Desktop/cppProject/Monopoly/include",
-      "program": "c:/Users/e/Desktop/cppProject/Monopoly/include/build/Debug/outDebug",
+      "cwd": "c:/Users/e/Desktop/cppProject/Monopoly/src",
+      "program": "c:/Users/e/Desktop/cppProject/Monopoly/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
