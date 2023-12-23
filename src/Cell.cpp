@@ -28,6 +28,11 @@ std::string Cell::getPosition()
     return position;
 }
 
+std::string Cell::getCategory()
+{
+    return category;
+}
+
 void Cell::increaseHouseLevel()
 {
     house_level++;
@@ -44,3 +49,24 @@ void Cell::setOwner(int index)
     owner = index;
     purchased = true;
 }
+
+std::string Cell::toStringHouse()
+{
+    if( house_level == 0)
+        return " ";
+    else
+        if (house_level == 1)
+            return "*";
+    return "^";
+}
+
+int Cell::getPlayer()
+{
+    return player;
+}
+
+std::ostream& operator<<(std::ostream& os, Cell& cell) {
+    os << "|" << cell.getCategory() << cell.toStringHouse() << cell.getPlayer() << "|";
+    return os;
+}
+
