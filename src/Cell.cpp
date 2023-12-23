@@ -70,7 +70,6 @@ void Cell::setCategory(int c)
         category = "P";
         break;
     }
-    category = c;
 }
 
 std::string Cell::toStringHouse()
