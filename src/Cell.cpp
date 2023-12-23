@@ -50,6 +50,29 @@ void Cell::setOwner(int index)
     purchased = true;
 }
 
+void Cell::setCategory(int c)
+{
+    switch (c)
+    {
+    case 0:
+        category = " ";
+        break;
+    case 1:
+        category = "E";
+        break;
+    case 2:
+        category = "S";
+        break;
+    case 3:
+        category = "L";
+        break;
+    case 4:
+        category = "P";
+        break;
+    }
+    category = c;
+}
+
 std::string Cell::toStringHouse()
 {
     if( house_level == 0)

@@ -1,6 +1,7 @@
 #include "Map.h"
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 /// @brief 
 Map::Map()
@@ -10,6 +11,25 @@ Map::Map()
 
 void Map::generatePath()
 {
+    srand (((unsigned) time(NULL)));
+    int e = 0;
+    int s = 0;
+    int l = 0;
+    int random = 0;
+    for(int i = 0 ; i < 28 ; i++)
+    {
+        if(i == 0)
+            path[i].setCategory(4);
+        else
+            if(i == 7 || i == 14 || i == 21)
+                path[i].setCategory(0);
+        do
+        {
+            random = 1 + (rand() % 3);
+
+        }while(e <= numberOfCheaps )
+        
+    }
 }
 
 void Map::printMap()

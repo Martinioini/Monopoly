@@ -18,7 +18,6 @@ class Cell
     public:
 
         Cell();
-        Cell(int c, int s, int l);
         
         bool isPurchased();
 
@@ -35,6 +34,8 @@ class Cell
         void deleteOwner();
 
         void setOwner(int index);
+        
+        void setCategory(int c);
 
         std::string toStringHouse();
         
