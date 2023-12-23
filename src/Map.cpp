@@ -16,19 +16,49 @@ void Map::generatePath()
     int s = 0;
     int l = 0;
     int random = 0;
+
     for(int i = 0 ; i < 28 ; i++)
     {
         if(i == 0)
-            path[i].setCategory(4);
-        else
-            if(i == 7 || i == 14 || i == 21)
-                path[i].setCategory(0);
-        do
         {
-            random = 1 + (rand() % 3);
+            path[i].setCategory(4);    //starting cell
+        }
+            
+        else if(i == 7 || i == 14 || i == 21)           
+        {
+            path[i].setCategory(0);    //angular cell
+        }
 
-        }while(e <= numberOfCheaps )
-        
+        else
+        {
+            bool done = false;
+
+            while(!done)
+            {
+                random = 1 + (rand() % 3);
+
+                if(random == 1 && e < numberOfCheaps)
+                {
+                    path[i].setCategory(1);
+                    done = true;
+                    e++;
+                }
+
+                else if(random == 2 && s < numberOfNormals)
+                {
+                    path[i].setCategory(2);
+                    done = true;
+                    s++;
+                }
+
+                else if(random == 3 && e < numberOfLuxury)
+                {
+                    path[i].setCategory(3);
+                    done = true;
+                    l++;
+                }
+             }
+        }      
     }
 }
 

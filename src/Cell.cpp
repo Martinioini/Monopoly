@@ -4,9 +4,6 @@ Cell::Cell()
 {
 }
 
-Cell::Cell(int c, int s, int l)
-{
-}
 
 bool Cell::isPurchased()
 {
@@ -55,19 +52,19 @@ void Cell::setCategory(int c)
     switch (c)
     {
     case 0:
-        category = " ";
+        category = " ";    //empty
         break;
     case 1:
-        category = "E";
+        category = "E";    //cheap
         break;
     case 2:
-        category = "S";
+        category = "S";    //standard
         break;
     case 3:
-        category = "L";
+        category = "L";    //luxury
         break;
     case 4:
-        category = "P";
+        category = "P";    //start
         break;
     }
 }
@@ -84,10 +81,11 @@ std::string Cell::toStringHouse()
 
 int Cell::getPlayer()
 {
-    return player;
+    return
 }
 
-std::ostream& operator<<(std::ostream& os, Cell& cell) {
+std::ostream& operator<<(std::ostream& os, Cell& cell) 
+{
     os << "|" << cell.getCategory() << cell.toStringHouse() << cell.getPlayer() << "|";
     return os;
 }
