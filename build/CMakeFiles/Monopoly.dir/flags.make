@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DMonopoly_EXPORTS
 
-CXX_INCLUDES = -I/mnt/c/Users/e/Desktop/cppProject/Monopoly/include
+CXX_INCLUDES = -I"/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/include"
 
 CXX_FLAGS = -fPIC -std=gnu++11
 
