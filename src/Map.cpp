@@ -37,14 +37,14 @@ void Map::generatePath()
             {
                 random = 1 + (rand() % 3);
 
-                if(random == 1 && e < numberOfCheaps)
+                if(random == 1 && e < numberOfEconomics)
                 {
                     path[i].setCategory(1);
                     done = true;
                     e++;
                 }
 
-                else if(random == 2 && s < numberOfNormals)
+                else if(random == 2 && s < numberOfStandards)
                 {
                     path[i].setCategory(2);
                     done = true;

@@ -89,16 +89,28 @@ std::string Cell::toStringHouse()
     return "^";
 }
 
-void Cell::addPlayer(Player p)
+void Cell::addPlayer(Player p) 
 {
     if(player_index[0] == 0)
+    {
         player_index[0] = p.getIndex();
+    }
+        
     else if (player_index[1] == 0)
+    {
         player_index[1] = p.getIndex();
+    }
+        
     else if (player_index[2] == 0)
+    {
         player_index[2] = p.getIndex();
+    }
+        
     else
+    {
         player_index[3] = p.getIndex();
+    }
+        
 }
 
 void Cell::removePlayer(Player p)
@@ -107,8 +119,11 @@ void Cell::removePlayer(Player p)
     do
     {
         if(player_index[i] == p.getIndex())
+        {
             player_index[i] = 0;
-    }while(player_index[i - 1] != p.getIndex());
+        }
+            
+    } while(player_index[i - 1] != p.getIndex());
 }
 
 int Cell::getPlayer(int index)

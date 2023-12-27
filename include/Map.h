@@ -21,8 +21,8 @@ class Map
 
         void printMap();
    
-        static constexpr int numberOfCheaps = 8;        //number cheap houses    
-        static constexpr int numberOfNormals = 10;      //number of normal houses
+        static constexpr int numberOfEconomics = 8;     //number economics houses    
+        static constexpr int numberOfStandards = 10;    //number of standard houses
         static constexpr int numberOfLuxury = 6;        //number of luxury houses
 
 };
