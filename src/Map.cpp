@@ -132,6 +132,7 @@ void Map::printMap()
 
             }
         }
+        std::cout << "\n";
     }
 }
 

@@ -20,13 +20,17 @@ virtual class Player
 
         int getIndex();
 
-        void pay(int price);
-
-        void getCredit(int credit, Player p);
+        void payTo(int credit, Player p);
 
         int throwDice();
 
-        virtual void buyHouse();
+        bool hasBalance(int price);     
+
+        void addMoney(int money);
+
+        virtual bool buyCell(int price, Cell cell);
+
+        virtual bool buyHouse(Cell cell);
 };
 
 

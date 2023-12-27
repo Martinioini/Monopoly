@@ -2,6 +2,11 @@
 
 Cell::Cell()
 {
+    house_level = 0;
+    purchased = false;
+    owner = 0;
+    player_index[0] = 1;
+    numberOfPlayers = 1;
 }
 
 
@@ -37,8 +42,13 @@ void Cell::increaseHouseLevel()
 
 void Cell::deleteOwner()
 {
-    owner = 5;
+    owner = 0;
     purchased = false;
+}
+
+void Cell::setPurchase()
+{
+    purchased = true;
 }
 
 void Cell::setOwner(int index)
@@ -79,14 +89,61 @@ std::string Cell::toStringHouse()
     return "^";
 }
 
-int Cell::getPlayer()
+void Cell::addPlayer(Player p)
 {
-    return
+    if(player_index[0] == 0)
+        player_index[0] = p.getIndex();
+    else if (player_index[1] == 0)
+        player_index[1] = p.getIndex();
+    else if (player_index[2] == 0)
+        player_index[2] = p.getIndex();
+    else
+        player_index[3] = p.getIndex();
+}
+
+void Cell::removePlayer(Player p)
+{
+    int i = 0;
+    do
+    {
+        if(player_index[i] == p.getIndex())
+            player_index[i] = 0;
+    }while(player_index[i - 1] != p.getIndex());
+}
+
+int Cell::getPlayer(int index)
+{
+    return player_index[index];
+}
+
+int Cell::getNumberOfPlayers()
+{
+    return  numberOfPlayers;
 }
 
 std::ostream& operator<<(std::ostream& os, Cell& cell) 
 {
-    os << "|" << cell.getCategory() << cell.toStringHouse() << cell.getPlayer() << "|";
-    return os;
+    if(cell.getNumberOfPlayers() == 0)
+    {
+        os << "|" << cell.getCategory() << cell.toStringHouse() << "|";
+        return os;
+    }
+    else if(cell.getNumberOfPlayers() == 1)
+    {
+        os << "|" << cell.getCategory() << cell.toStringHouse() << cell.getPlayer(0) << "|";
+        return os;
+    }
+    else
+    {
+        os << "|" << cell.getCategory() << cell.toStringHouse() ;
+        for(int i = 0; i < cell.getNumberOfPlayers(); i++)
+        {
+            os << " " << cell.getPlayer(i);
+        }
+        os << "|";
+        return os;
+    }
+
+
 }
 

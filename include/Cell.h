@@ -13,6 +13,8 @@ class Cell
         int house_level;         //livello immobile 0(nessuna casa), 1(casa normale), 2(albergo)
         int owner;               //player propetario, se > 4 allora non acquisita
         std::string position;
+        int player_index[4];
+        int numberOfPlayers;
 
     public:
 
@@ -32,13 +34,21 @@ class Cell
 
         void deleteOwner();
 
+        void setPurchase();
+
         void setOwner(int index);
         
         void setCategory(int c);
 
         std::string toStringHouse();
+
+        void addPlayer(Player p);
         
-        int getPlayer();
+        void removePlayer(Player p);
+        
+        int getPlayer(int index);
+
+        int getNumberOfPlayers();
 
         friend std::ostream& operator<<(std::ostream& os, Cell& cell);
 

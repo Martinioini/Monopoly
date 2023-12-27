@@ -17,13 +17,75 @@ int Player::getIndex()
     return _index;
 }
 
-void Player::pay(int price)
+bool Player::payTo(int credit, Player p)
 {
-    _balance -= price;
+    if(hasBalance(credit))
+    {
+        _balance -= credit;
+        p.addMoney(credit);
+        return true;
+    }
+    p.addMoney(_balance);
+    return false;
 }
 
-void Player::getCredit(int credit, Player p)
+void Player::addMoney(int money)
 {
-    _balance -= credit
+    _balance += money;
 }
+
+int Player::throwDice()
+{
+    srand (((unsigned) time(NULL)));
+    return ((1 + (rand() % 6)) + (1 + (rand() % 6)));
+}
+
+bool Player::hasBalance(int price)
+{
+    return price < _balance;
+}
+
+virtual bool Player::buyCell(int price, Cell cell)
+{
+    if(hasBalance(price))
+    {
+        _balance -= price;
+        cell.setOwner(_index);
+        cell.setPurchase();
+        return true;
+    }
+    return false;
+}
+
+virtual bool Player::buyHouse(Cell cell)
+{
+    if(cell.getCategory() == "E")
+    {
+        if(hasBalance(3))
+        {
+            _balance -= 3;
+            cell.increaseHouseLevel();
+            return true;
+        }
+    }
+    else if(cell.getCategory() == "S")
+    {
+        if(hasBalance(5))
+        {
+            _balance -= 5;
+            cell.increaseHouseLevel();
+            return true;
+        }
+    }
+    else if(cell.getCategory() == "L"){
+        if(hasBalance(10))
+        {
+            _balance -= 10;
+            cell.increaseHouseLevel();
+            return true;
+        }
+    }
+    return false;
+}
+
 
