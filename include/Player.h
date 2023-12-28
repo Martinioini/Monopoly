@@ -1,20 +1,27 @@
-#include <iostream>
-#include <string>
-
 #ifndef PLAYER_H
 #define PLAYER_H
 
-virtual class Player
+#include <iostream>
+#include <string>
+#include "Cell.h"
+
+class Player
 {
     private:
 
+        int property_number = 0;
+        std::string property[24];
         int _index;
-
         int _balance = 100;
+        std::string position = "";
 
     public:
 
         Player(int index);
+
+        void addProperty(std::string s);
+
+        void printProperty();
         
         int getBalance();
 

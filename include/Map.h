@@ -17,6 +17,8 @@ class Map
     
         Map();  
 
+        void setPosition();
+
         void generatePath();     //generate the random number of cells in the path following constraints
 
         void printMap();

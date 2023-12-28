@@ -1,14 +1,18 @@
 #include "Cell.h"
 
+
 Cell::Cell()
 {
     house_level = 0;
     purchased = false;
     owner = 0;
-    player_index[0] = 1;
-    numberOfPlayers = 1;
+    numberOfPlayers = 0;
 }
 
+void Cell::setPosition(std::string s)
+{
+    position = s;
+}
 
 bool Cell::isPurchased()
 {
@@ -89,41 +93,41 @@ std::string Cell::toStringHouse()
     return "^";
 }
 
-void Cell::addPlayer(Player p) 
+void Cell::addPlayer(int player) 
 {
     if(player_index[0] == 0)
     {
-        player_index[0] = p.getIndex();
+        player_index[0] = player;
     }
         
     else if (player_index[1] == 0)
     {
-        player_index[1] = p.getIndex();
+        player_index[1] = player;
     }
         
     else if (player_index[2] == 0)
     {
-        player_index[2] = p.getIndex();
+        player_index[2] = player;
     }
         
     else
     {
-        player_index[3] = p.getIndex();
+        player_index[3] = player;
     }
         
 }
 
-void Cell::removePlayer(Player p)
+void Cell::removePlayer(int player)
 {
     int i = 0;
     do
     {
-        if(player_index[i] == p.getIndex())
+        if(player_index[i] == player)
         {
             player_index[i] = 0;
         }
             
-    } while(player_index[i - 1] != p.getIndex());
+    } while(player_index[i - 1] != player);
 }
 
 int Cell::getPlayer(int index)

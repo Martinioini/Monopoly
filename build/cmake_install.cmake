@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly
+# Install script for directory: /mnt/c/Users/Edin/OneDrive/Desktop/PROGETTO/Monopoly
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/Edin/OneDrive/Desktop/PROGETTO/Monopoly/Build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

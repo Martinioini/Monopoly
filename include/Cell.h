@@ -1,8 +1,11 @@
+#ifndef CELL_H
+#define CELL_H
+
 #include <iostream>
 #include <string>
 
-#ifndef CELL_H
-#define CELL_H
+
+
 
 class Cell
 {
@@ -19,7 +22,9 @@ class Cell
     public:
 
         Cell();
-        
+
+        void setPosition(std::string s);
+
         bool isPurchased();
 
         int getOwnerIndex();
@@ -42,9 +47,9 @@ class Cell
 
         std::string toStringHouse();
 
-        void addPlayer(Player p);
+        void addPlayer(int player);
         
-        void removePlayer(Player p);
+        void removePlayer(int player);
         
         int getPlayer(int index);
 
