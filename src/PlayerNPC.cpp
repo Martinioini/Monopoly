@@ -59,7 +59,7 @@ bool PlayerNPC::buyHouse(Cell cell)
             }
         }
     }
-
     return false;
 }
+
 

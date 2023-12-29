@@ -3,9 +3,7 @@
 
 #include <iostream>
 #include <string>
-
-
-
+#include <list>
 
 class Cell
 {
@@ -16,8 +14,7 @@ class Cell
         int house_level;         //livello immobile 0(nessuna casa), 1(casa normale), 2(albergo)
         int owner;               //player propetario, se > 4 allora non acquisita
         std::string position;
-        int player_index[4];
-        int numberOfPlayers;
+        std::list<int> players;
 
     public:
 
@@ -50,10 +47,6 @@ class Cell
         void addPlayer(int player);
         
         void removePlayer(int player);
-        
-        int getPlayer(int index);
-
-        int getNumberOfPlayers();
 
         friend std::ostream& operator<<(std::ostream& os, Cell& cell);
 

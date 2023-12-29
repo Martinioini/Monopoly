@@ -25,9 +25,9 @@ class Player
         
         int getBalance();
 
-        int getIndex();
+        int getIndex() const;
 
-        void payTo(int credit, Player p);
+        bool payTo(int credit, Player p);
 
         int throwDice();
 
@@ -38,6 +38,7 @@ class Player
         virtual bool buyCell(int price, Cell cell);
 
         virtual bool buyHouse(Cell cell);
+
 };
 
 

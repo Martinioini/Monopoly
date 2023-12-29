@@ -10,7 +10,7 @@ void Player::addProperty(std::string s)
     property[property_number++] = s;
 }
 
-void printProperty()
+void Player::printProperty()
 {
     std::cout << "Giocatore " << _index << ": ";
     for (int i = 0; i < property_number; i++)
@@ -31,7 +31,7 @@ int Player::getBalance()
     return _balance;
 }
 
-int Player::getIndex()
+int Player::getIndex() const
 {
     return _index;
 }
@@ -64,7 +64,7 @@ bool Player::hasBalance(int price)
     return price < _balance;
 }
 
-virtual bool Player::buyCell(int price, Cell cell)
+bool Player::buyCell(int price, Cell cell) 
 {
     if(hasBalance(price))
     {
@@ -76,7 +76,7 @@ virtual bool Player::buyCell(int price, Cell cell)
     return false;
 }
 
-virtual bool Player::buyHouse(Cell cell)
+bool Player::buyHouse(Cell cell)
 {
     if(cell.getCategory() == "E")
     {
@@ -106,5 +106,6 @@ virtual bool Player::buyHouse(Cell cell)
     }
     return false;
 }
+
 
 

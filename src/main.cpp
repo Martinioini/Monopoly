@@ -33,11 +33,11 @@ int main()
         Player Giocatore1{1};
         PlayerNPC Giocatore2{2};
         PlayerNPC Giocatore3{3};
-        PlayerNPC Giocatore4{4};
+        //PlayerNPC Giocatore4{4};
         map.setPlayerCell(0, Giocatore1.getIndex());
         map.setPlayerCell(0, Giocatore2.getIndex());
         map.setPlayerCell(0, Giocatore3.getIndex());
-        map.setPlayerCell(0, Giocatore4.getIndex());
+        //map.setPlayerCell(0, Giocatore4.getIndex()); 
     }
 
     else
@@ -51,4 +51,6 @@ int main()
         map.setPlayerCell(0, Giocatore3.getIndex());
         map.setPlayerCell(0, Giocatore4.getIndex());
     }
+
+    map.printMap(); 
 }

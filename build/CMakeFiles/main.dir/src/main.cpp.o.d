@@ -146,8 +146,11 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Map.h \
  /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Cell.h \
- /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \

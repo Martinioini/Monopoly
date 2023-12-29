@@ -1,7 +1,8 @@
-CMakeFiles/Monopoly.dir/src/Cell.cpp.o: \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Cell.cpp \
+CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: \
+ /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/PlayerNPC.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Cell.h \
+ /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/PlayerNPC.h \
+ /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Player.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -145,8 +146,9 @@ CMakeFiles/Monopoly.dir/src/Cell.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/list \
- /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/istream.tcc \
+ /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Cell.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/list.tcc

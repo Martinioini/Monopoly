@@ -190,6 +190,54 @@ src/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Map.cpp.s
 .PHONY : src/Map.cpp.s
 
+src/Player.o: src/Player.cpp.o
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
+src/PlayerNPC.o: src/PlayerNPC.cpp.o
+.PHONY : src/PlayerNPC.o
+
+# target to build an object file
+src/PlayerNPC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o
+.PHONY : src/PlayerNPC.cpp.o
+
+src/PlayerNPC.i: src/PlayerNPC.cpp.i
+.PHONY : src/PlayerNPC.i
+
+# target to preprocess a source file
+src/PlayerNPC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.i
+.PHONY : src/PlayerNPC.cpp.i
+
+src/PlayerNPC.s: src/PlayerNPC.cpp.s
+.PHONY : src/PlayerNPC.s
+
+# target to generate assembly for a file
+src/PlayerNPC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.s
+.PHONY : src/PlayerNPC.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -230,6 +278,12 @@ help:
 	@echo "... src/Map.o"
 	@echo "... src/Map.i"
 	@echo "... src/Map.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
+	@echo "... src/PlayerNPC.o"
+	@echo "... src/PlayerNPC.i"
+	@echo "... src/PlayerNPC.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
