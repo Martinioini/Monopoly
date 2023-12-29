@@ -1,10 +1,29 @@
 #include "Player.h"
-#include <iostream>
-#include <string>
 
 Player::Player(int index)
 {
     _index = index;
+}
+
+void Player::addProperty(std::string s)
+{
+    property[property_number++] = s;
+}
+
+void printProperty()
+{
+    std::cout << "Giocatore " << _index << ": ";
+    for (int i = 0; i < property_number; i++)
+    {
+        if (i == (property_number - 1))
+        {
+            std::cout << property[i] << std::endl;
+        }
+        else
+        {
+            std::cout << property[i] << ", ";
+        }
+    }
 }
 
 int Player::getBalance()

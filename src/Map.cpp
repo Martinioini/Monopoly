@@ -9,6 +9,67 @@ Map::Map()
     generatePath();
 }
 
+void Map::setCell()
+{
+    for(int i = 0 ; i < 8 ; i++)
+    {
+        for(int j = 0 ; j < 8 ; j++)    
+        {
+            switch(i)
+            {
+                case 0:
+                    path[j].setPosition("A" + std::to_string(j));
+                    break;
+                case 1:
+                    if(j == 0)
+                        path[j].setPosition("B1");
+                    else 
+                        if(j == 7)
+                            path[j].setPosition("B8");
+                    break; 
+                case 2:
+                    if(j == 0)
+                        path[j].setPosition("C1");
+                    else 
+                        if(j == 7)
+                            path[j].setPosition("C8");
+                    break; 
+                case 3:
+                    if(j == 0)
+                        path[j].setPosition("D1");
+                    else 
+                        if(j == 7)
+                            path[j].setPosition("D8");
+                    break; 
+                case 4:
+                    if(j == 0)
+                        path[j].setPosition("E1");
+                    else 
+                        if(j == 7)
+                            path[j].setPosition("E8");
+                    break; 
+                case 5:
+                    if(j == 0)
+                        path[j].setPosition("F1");
+                    else 
+                        if(j == 7)
+                            path[j].setPosition("F8");
+                    break; 
+                case 6:
+                    if(j == 0)
+                        path[j].setPosition("G1");
+                    else 
+                        if(j == 7)
+                            path[j].setPosition("G8");
+                    break; 
+                case 7:
+                    path[j].setPosition("A" + std::to_string(j));
+                    break;
+            }
+        }
+    }
+}
+
 void Map::generatePath()
 {
     srand (((unsigned) time(NULL)));
@@ -16,7 +77,7 @@ void Map::generatePath()
     int s = 0;
     int l = 0;
     int random = 0;
-
+    setCell();
     for(int i = 0 ; i < 28 ; i++)
     {
         if(i == 0)
@@ -37,14 +98,14 @@ void Map::generatePath()
             {
                 random = 1 + (rand() % 3);
 
-                if(random == 1 && e < numberOfCheaps)
+                if(random == 1 && e < numberOfEconomics)
                 {
                     path[i].setCategory(1);
                     done = true;
                     e++;
                 }
 
-                else if(random == 2 && s < numberOfNormals)
+                else if(random == 2 && s < numberOfStandards)
                 {
                     path[i].setCategory(2);
                     done = true;
@@ -134,6 +195,16 @@ void Map::printMap()
         }
         std::cout << "\n";
     }
+}
+
+void Map::setPlayerCell(int position, int playerIndex)
+{
+    path[position].addPlayer(playerIndex);
+}
+
+void Map::removePlayer(int position, int playerIndex)
+{
+    path[position].removePlayer(playerIndex);
 }
 
 

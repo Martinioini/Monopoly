@@ -17,12 +17,20 @@ class Map
     
         Map();  
 
+        void setPosition();
+
         void generatePath();     //generate the random number of cells in the path following constraints
 
         void printMap();
+
+        void setCell();
+
+        void setPlayerCell(int position, int playerIndex);
+
+        void removePlayer(int position, int playerIndex);
    
-        static constexpr int numberOfCheaps = 8;        //number cheap houses    
-        static constexpr int numberOfNormals = 10;      //number of normal houses
+        static constexpr int numberOfEconomics = 8;     //number economics houses    
+        static constexpr int numberOfStandards = 10;    //number of standard houses
         static constexpr int numberOfLuxury = 6;        //number of luxury houses
 
 };
