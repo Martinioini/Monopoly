@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/Edin/OneDrive/Desktop/PROGETTO/Monopoly/src/Cell.cpp" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o.d"
-  "/mnt/c/Users/Edin/OneDrive/Desktop/PROGETTO/Monopoly/src/Map.cpp" "CMakeFiles/Monopoly.dir/src/Map.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/Map.cpp.o.d"
+  "/mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Cell.cpp" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o.d"
+  "/mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Map.cpp" "CMakeFiles/Monopoly.dir/src/Map.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/Map.cpp.o.d"
   )
 
 # Targets to which this target links.

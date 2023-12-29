@@ -1,6 +1,4 @@
 #include "Player.h"
-#include <iostream>
-#include <string>
 
 Player::Player(int index)
 {

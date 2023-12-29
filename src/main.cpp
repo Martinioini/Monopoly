@@ -1,8 +1,9 @@
 #include <iostream>
-#include "Map.cpp"
+#include "Map.h"
 #include <string>
 #include <algorithm>
 #include <queue>
+#include "PlayerNPC.h"
 
 
 bool start(Map map)
@@ -26,23 +27,28 @@ bool start(Map map)
 int main()
 {
     Map map;
-    std::queue<Player> Players;
+    std::queue<Player> players;
     if (start(map))
     {
         Player Giocatore1{1};
         PlayerNPC Giocatore2{2};
         PlayerNPC Giocatore3{3};
         PlayerNPC Giocatore4{4};
-        path[0].addPlayer(Giocatore1.getIndex());
-        path[0].addPlayer(Giocatore2.getIndex());
-        path[0].addPlayer(Giocatore3.getIndex());
-        path[0].addPlayer(Giocatore4.getIndex());
+        map.setPlayerCell(0, Giocatore1.getIndex());
+        map.setPlayerCell(0, Giocatore2.getIndex());
+        map.setPlayerCell(0, Giocatore3.getIndex());
+        map.setPlayerCell(0, Giocatore4.getIndex());
     }
+
     else
     {
         PlayerNPC Giocatore1{1};
         PlayerNPC Giocatore2{2};
         PlayerNPC Giocatore3{3};
         PlayerNPC Giocatore4{4};
+        map.setPlayerCell(0, Giocatore1.getIndex());
+        map.setPlayerCell(0, Giocatore2.getIndex());
+        map.setPlayerCell(0, Giocatore3.getIndex());
+        map.setPlayerCell(0, Giocatore4.getIndex());
     }
 }

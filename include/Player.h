@@ -7,7 +7,7 @@
 
 class Player
 {
-    private:
+    protected:
 
         int property_number = 0;
         std::string property[24];

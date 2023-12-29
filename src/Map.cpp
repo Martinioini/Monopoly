@@ -197,5 +197,15 @@ void Map::printMap()
     }
 }
 
+void Map::setPlayerCell(int position, int playerIndex)
+{
+    path[position].addPlayer(playerIndex);
+}
+
+void Map::removePlayer(int position, int playerIndex)
+{
+    path[position].removePlayer(playerIndex);
+}
+
 
 
