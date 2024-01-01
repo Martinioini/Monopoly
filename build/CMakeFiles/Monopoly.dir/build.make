@@ -83,19 +83,19 @@ CMakeFiles/Monopoly.dir/src/Cell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Monopoly.dir/src/Cell.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Cell.cpp -o CMakeFiles/Monopoly.dir/src/Cell.cpp.s
 
-CMakeFiles/Monopoly.dir/src/Map.cpp.o: CMakeFiles/Monopoly.dir/flags.make
-CMakeFiles/Monopoly.dir/src/Map.cpp.o: ../src/Map.cpp
-CMakeFiles/Monopoly.dir/src/Map.cpp.o: CMakeFiles/Monopoly.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Monopoly.dir/src/Map.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/Map.cpp.o -MF CMakeFiles/Monopoly.dir/src/Map.cpp.o.d -o CMakeFiles/Monopoly.dir/src/Map.cpp.o -c /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Map.cpp
+CMakeFiles/Monopoly.dir/src/GameField.cpp.o: CMakeFiles/Monopoly.dir/flags.make
+CMakeFiles/Monopoly.dir/src/GameField.cpp.o: ../src/GameField.cpp
+CMakeFiles/Monopoly.dir/src/GameField.cpp.o: CMakeFiles/Monopoly.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Monopoly.dir/src/GameField.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/GameField.cpp.o -MF CMakeFiles/Monopoly.dir/src/GameField.cpp.o.d -o CMakeFiles/Monopoly.dir/src/GameField.cpp.o -c /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/GameField.cpp
 
-CMakeFiles/Monopoly.dir/src/Map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Monopoly.dir/src/Map.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Map.cpp > CMakeFiles/Monopoly.dir/src/Map.cpp.i
+CMakeFiles/Monopoly.dir/src/GameField.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Monopoly.dir/src/GameField.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/GameField.cpp > CMakeFiles/Monopoly.dir/src/GameField.cpp.i
 
-CMakeFiles/Monopoly.dir/src/Map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Monopoly.dir/src/Map.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Map.cpp -o CMakeFiles/Monopoly.dir/src/Map.cpp.s
+CMakeFiles/Monopoly.dir/src/GameField.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Monopoly.dir/src/GameField.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/GameField.cpp -o CMakeFiles/Monopoly.dir/src/GameField.cpp.s
 
 CMakeFiles/Monopoly.dir/src/Player.cpp.o: CMakeFiles/Monopoly.dir/flags.make
 CMakeFiles/Monopoly.dir/src/Player.cpp.o: ../src/Player.cpp
@@ -128,7 +128,7 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.s: cmake_force
 # Object files for target Monopoly
 Monopoly_OBJECTS = \
 "CMakeFiles/Monopoly.dir/src/Cell.cpp.o" \
-"CMakeFiles/Monopoly.dir/src/Map.cpp.o" \
+"CMakeFiles/Monopoly.dir/src/GameField.cpp.o" \
 "CMakeFiles/Monopoly.dir/src/Player.cpp.o" \
 "CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o"
 
@@ -136,7 +136,7 @@ Monopoly_OBJECTS = \
 Monopoly_EXTERNAL_OBJECTS =
 
 libMonopoly.so: CMakeFiles/Monopoly.dir/src/Cell.cpp.o
-libMonopoly.so: CMakeFiles/Monopoly.dir/src/Map.cpp.o
+libMonopoly.so: CMakeFiles/Monopoly.dir/src/GameField.cpp.o
 libMonopoly.so: CMakeFiles/Monopoly.dir/src/Player.cpp.o
 libMonopoly.so: CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o
 libMonopoly.so: CMakeFiles/Monopoly.dir/build.make

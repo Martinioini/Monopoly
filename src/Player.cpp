@@ -1,4 +1,5 @@
 #include "Player.h"
+#include <random>
 
 Player::Player(int index)
 {
@@ -55,8 +56,17 @@ void Player::addMoney(int money)
 
 int Player::throwDice()
 {
-    srand (((unsigned) time(NULL)));
-    return ((1 + (rand() % 6)) + (1 + (rand() % 6)));
+    // Inizializza un generatore di numeri casuali
+    std::random_device rd;
+    std::mt19937 gen(rd());
+
+    // Genera due numeri casuali da 1 a 6
+    std::uniform_int_distribution<int> dist(1, 6);
+    int dice1 = dist(gen);
+    int dice2 = dist(gen);
+
+    // Restituisce la somma dei due numeri
+    return dice1 + dice2;
 }
 
 bool Player::hasBalance(int price)

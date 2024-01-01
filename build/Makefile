@@ -166,29 +166,29 @@ src/Cell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Cell.cpp.s
 .PHONY : src/Cell.cpp.s
 
-src/Map.o: src/Map.cpp.o
-.PHONY : src/Map.o
+src/GameField.o: src/GameField.cpp.o
+.PHONY : src/GameField.o
 
 # target to build an object file
-src/Map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Map.cpp.o
-.PHONY : src/Map.cpp.o
+src/GameField.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/GameField.cpp.o
+.PHONY : src/GameField.cpp.o
 
-src/Map.i: src/Map.cpp.i
-.PHONY : src/Map.i
+src/GameField.i: src/GameField.cpp.i
+.PHONY : src/GameField.i
 
 # target to preprocess a source file
-src/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Map.cpp.i
-.PHONY : src/Map.cpp.i
+src/GameField.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/GameField.cpp.i
+.PHONY : src/GameField.cpp.i
 
-src/Map.s: src/Map.cpp.s
-.PHONY : src/Map.s
+src/GameField.s: src/GameField.cpp.s
+.PHONY : src/GameField.s
 
 # target to generate assembly for a file
-src/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Map.cpp.s
-.PHONY : src/Map.cpp.s
+src/GameField.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/GameField.cpp.s
+.PHONY : src/GameField.cpp.s
 
 src/Player.o: src/Player.cpp.o
 .PHONY : src/Player.o
@@ -275,9 +275,9 @@ help:
 	@echo "... src/Cell.o"
 	@echo "... src/Cell.i"
 	@echo "... src/Cell.s"
-	@echo "... src/Map.o"
-	@echo "... src/Map.i"
-	@echo "... src/Map.s"
+	@echo "... src/GameField.o"
+	@echo "... src/GameField.i"
+	@echo "... src/GameField.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"

@@ -6,7 +6,7 @@ project(Monopoly)
 include_directories(include)
 
 add_library(${PROJECT_NAME} SHARED
-src/Cell.cpp src/Map.cpp src/Player.cpp src/PlayerNPC.cpp)
+src/Cell.cpp src/GameField.cpp src/Player.cpp src/PlayerNPC.cpp)
 
 add_executable(main src/main.cpp)
 

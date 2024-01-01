@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include "Cell.h"
+#include <vector>
 
 class Player
 {

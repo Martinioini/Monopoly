@@ -185,9 +185,9 @@ CMakeFiles/Monopoly.dir/src/Cell.cpp.o: ../src/Cell.cpp \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/list.tcc
 
-CMakeFiles/Monopoly.dir/src/Map.cpp.o: ../src/Map.cpp \
+CMakeFiles/Monopoly.dir/src/GameField.cpp.o: ../src/GameField.cpp \
   /usr/include/stdc-predef.h \
-  ../include/Map.h \
+  ../include/GameField.h \
   ../include/Cell.h \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -553,7 +553,13 @@ CMakeFiles/Monopoly.dir/src/Player.cpp.o: ../src/Player.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/list.tcc
+  /usr/include/c++/11/bits/list.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/ctime
 
 CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
   /usr/include/stdc-predef.h \
@@ -739,16 +745,27 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/list.tcc
+  /usr/include/c++/11/bits/list.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
 
 ../include/Player.h:
 
 ../src/Player.cpp:
 
-../include/Map.h:
-
 /usr/include/c++/11/bits/stl_list.h:
+
+../include/GameField.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -773,6 +790,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 /usr/include/c++/11/stdexcept:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/usr/include/c++/11/bits/stl_vector.h:
 
 /usr/include/c++/11/system_error:
 
@@ -920,6 +939,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 
 /usr/include/c++/11/iosfwd:
 
+/usr/include/c++/11/ctime:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
@@ -949,6 +970,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/11/vector:
 
 ../src/Cell.cpp:
 
@@ -1036,9 +1059,9 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-../src/Map.cpp:
-
 /usr/include/c++/11/cctype:
+
+../src/GameField.cpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 

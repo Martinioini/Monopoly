@@ -178,7 +178,7 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../include/Map.h \
+  ../include/GameField.h \
   ../include/Cell.h \
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
@@ -232,7 +232,7 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/stl_list.h:
 
-../include/Map.h:
+../include/GameField.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 

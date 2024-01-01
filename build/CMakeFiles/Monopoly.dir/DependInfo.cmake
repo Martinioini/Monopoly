@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Cell.cpp" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o.d"
-  "/mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Map.cpp" "CMakeFiles/Monopoly.dir/src/Map.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/Map.cpp.o.d"
+  "/mnt/c/Users/alema/Desktop/cpp/Monopoly/src/GameField.cpp" "CMakeFiles/Monopoly.dir/src/GameField.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/GameField.cpp.o.d"
   "/mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Player.cpp" "CMakeFiles/Monopoly.dir/src/Player.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/Player.cpp.o.d"
   "/mnt/c/Users/alema/Desktop/cpp/Monopoly/src/PlayerNPC.cpp" "CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o.d"
   )

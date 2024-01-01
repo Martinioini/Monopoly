@@ -1,11 +1,11 @@
-#ifndef MAP_H
-#define MAP_H
+#ifndef GAMEFIELD_H
+#define GAMEFIELD_H
 
 #include "Cell.h"
 #include <iostream>
 #include <string>
 
-class Map
+class GameField
 {
     private:
 
@@ -15,7 +15,7 @@ class Map
 
     public:
     
-        Map();  
+        GameField();  
 
         void setPosition();
 
@@ -35,4 +35,4 @@ class Map
 
 };
 
-#endif //MAP_H
+#endif //GAMEFIELD_H

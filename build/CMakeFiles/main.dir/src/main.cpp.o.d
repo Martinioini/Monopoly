@@ -144,7 +144,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Map.h \
+ /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/GameField.h \
  /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Cell.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
