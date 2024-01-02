@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/main.cpp \
+ /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -144,8 +144,8 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/GameField.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Cell.h \
+ /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/include/GameField.h \
+ /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/include/Cell.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
@@ -162,5 +162,5 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/bits/stl_queue.h \
  /usr/include/c++/11/bits/uses_allocator.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/PlayerNPC.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Player.h
+ /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/include/PlayerNPC.h \
+ /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/include/Player.h

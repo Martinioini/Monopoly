@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/alema/Desktop/cpp/Monopoly
+CMAKE_SOURCE_DIR = /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/alema/Desktop/cpp/Monopoly/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Monopoly.dir/depend.make
@@ -72,58 +72,58 @@ include CMakeFiles/Monopoly.dir/flags.make
 CMakeFiles/Monopoly.dir/src/Cell.cpp.o: CMakeFiles/Monopoly.dir/flags.make
 CMakeFiles/Monopoly.dir/src/Cell.cpp.o: ../src/Cell.cpp
 CMakeFiles/Monopoly.dir/src/Cell.cpp.o: CMakeFiles/Monopoly.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Monopoly.dir/src/Cell.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/Cell.cpp.o -MF CMakeFiles/Monopoly.dir/src/Cell.cpp.o.d -o CMakeFiles/Monopoly.dir/src/Cell.cpp.o -c /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Cell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Monopoly.dir/src/Cell.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/Cell.cpp.o -MF CMakeFiles/Monopoly.dir/src/Cell.cpp.o.d -o CMakeFiles/Monopoly.dir/src/Cell.cpp.o -c /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/Cell.cpp
 
 CMakeFiles/Monopoly.dir/src/Cell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Monopoly.dir/src/Cell.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Cell.cpp > CMakeFiles/Monopoly.dir/src/Cell.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/Cell.cpp > CMakeFiles/Monopoly.dir/src/Cell.cpp.i
 
 CMakeFiles/Monopoly.dir/src/Cell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Monopoly.dir/src/Cell.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Cell.cpp -o CMakeFiles/Monopoly.dir/src/Cell.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/Cell.cpp -o CMakeFiles/Monopoly.dir/src/Cell.cpp.s
 
 CMakeFiles/Monopoly.dir/src/GameField.cpp.o: CMakeFiles/Monopoly.dir/flags.make
 CMakeFiles/Monopoly.dir/src/GameField.cpp.o: ../src/GameField.cpp
 CMakeFiles/Monopoly.dir/src/GameField.cpp.o: CMakeFiles/Monopoly.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Monopoly.dir/src/GameField.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/GameField.cpp.o -MF CMakeFiles/Monopoly.dir/src/GameField.cpp.o.d -o CMakeFiles/Monopoly.dir/src/GameField.cpp.o -c /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/GameField.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Monopoly.dir/src/GameField.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/GameField.cpp.o -MF CMakeFiles/Monopoly.dir/src/GameField.cpp.o.d -o CMakeFiles/Monopoly.dir/src/GameField.cpp.o -c /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/GameField.cpp
 
 CMakeFiles/Monopoly.dir/src/GameField.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Monopoly.dir/src/GameField.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/GameField.cpp > CMakeFiles/Monopoly.dir/src/GameField.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/GameField.cpp > CMakeFiles/Monopoly.dir/src/GameField.cpp.i
 
 CMakeFiles/Monopoly.dir/src/GameField.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Monopoly.dir/src/GameField.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/GameField.cpp -o CMakeFiles/Monopoly.dir/src/GameField.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/GameField.cpp -o CMakeFiles/Monopoly.dir/src/GameField.cpp.s
 
 CMakeFiles/Monopoly.dir/src/Player.cpp.o: CMakeFiles/Monopoly.dir/flags.make
 CMakeFiles/Monopoly.dir/src/Player.cpp.o: ../src/Player.cpp
 CMakeFiles/Monopoly.dir/src/Player.cpp.o: CMakeFiles/Monopoly.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Monopoly.dir/src/Player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/Player.cpp.o -MF CMakeFiles/Monopoly.dir/src/Player.cpp.o.d -o CMakeFiles/Monopoly.dir/src/Player.cpp.o -c /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Monopoly.dir/src/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/Player.cpp.o -MF CMakeFiles/Monopoly.dir/src/Player.cpp.o.d -o CMakeFiles/Monopoly.dir/src/Player.cpp.o -c /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/Player.cpp
 
 CMakeFiles/Monopoly.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Monopoly.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Player.cpp > CMakeFiles/Monopoly.dir/src/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/Player.cpp > CMakeFiles/Monopoly.dir/src/Player.cpp.i
 
 CMakeFiles/Monopoly.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Monopoly.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Player.cpp -o CMakeFiles/Monopoly.dir/src/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/Player.cpp -o CMakeFiles/Monopoly.dir/src/Player.cpp.s
 
 CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: CMakeFiles/Monopoly.dir/flags.make
 CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp
 CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: CMakeFiles/Monopoly.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o -MF CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o.d -o CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o -c /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/PlayerNPC.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o -MF CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o.d -o CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o -c /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/PlayerNPC.cpp
 
 CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/PlayerNPC.cpp > CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/PlayerNPC.cpp > CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.i
 
 CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/PlayerNPC.cpp -o CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/PlayerNPC.cpp -o CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.s
 
 # Object files for target Monopoly
 Monopoly_OBJECTS = \
@@ -141,7 +141,7 @@ libMonopoly.so: CMakeFiles/Monopoly.dir/src/Player.cpp.o
 libMonopoly.so: CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o
 libMonopoly.so: CMakeFiles/Monopoly.dir/build.make
 libMonopoly.so: CMakeFiles/Monopoly.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libMonopoly.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libMonopoly.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Monopoly.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/Monopoly.dir/clean:
 .PHONY : CMakeFiles/Monopoly.dir/clean
 
 CMakeFiles/Monopoly.dir/depend:
-	cd /mnt/c/Users/alema/Desktop/cpp/Monopoly/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/alema/Desktop/cpp/Monopoly /mnt/c/Users/alema/Desktop/cpp/Monopoly /mnt/c/Users/alema/Desktop/cpp/Monopoly/build /mnt/c/Users/alema/Desktop/cpp/Monopoly/build /mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles/Monopoly.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles/Monopoly.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Monopoly.dir/depend
 

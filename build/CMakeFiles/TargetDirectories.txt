@@ -1,4 +1,4 @@
-/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles/Monopoly.dir
-/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles/main.dir
-/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles/Monopoly.dir
+/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles/main.dir
+/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/build/CMakeFiles/rebuild_cache.dir

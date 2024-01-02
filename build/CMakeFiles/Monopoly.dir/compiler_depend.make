@@ -559,7 +559,25 @@ CMakeFiles/Monopoly.dir/src/Player.cpp.o: ../src/Player.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/c++/11/ctime
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h
 
 CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
   /usr/include/stdc-predef.h \
@@ -750,12 +768,53 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h
 
+
+/usr/include/c++/11/limits:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/c++/11/bits/random.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/math.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
@@ -772,6 +831,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/random:
 
 /usr/include/c++/11/bits/list.tcc:
 
@@ -795,6 +856,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 
 /usr/include/c++/11/system_error:
 
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
 /usr/include/c++/11/bits/locale_classes.tcc:
 
 /usr/include/c++/11/bits/basic_string.tcc:
@@ -804,6 +867,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 ../src/PlayerNPC.cpp:
 
 /usr/include/c++/11/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
@@ -939,8 +1004,6 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 
 /usr/include/c++/11/iosfwd:
 
-/usr/include/c++/11/ctime:
-
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
@@ -1019,6 +1082,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 
 /usr/include/c++/11/string:
 
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/wchar.h:
@@ -1077,6 +1142,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
 /usr/include/c++/11/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
@@ -1084,6 +1151,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/pthread.h:
+
+/usr/include/c++/11/bits/random.tcc:
 
 /usr/include/sched.h:
 
@@ -1111,6 +1180,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/usr/include/c++/11/numeric:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
@@ -1120,6 +1191,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/c++/11/bits/locale_classes.h:
+
+/usr/include/c++/11/cmath:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 

@@ -1,7 +1,7 @@
 CMakeFiles/Monopoly.dir/src/Player.cpp.o: \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Player.cpp \
+ /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/Player.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Player.h \
+ /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/include/Player.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,7 +146,7 @@ CMakeFiles/Monopoly.dir/src/Player.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Cell.h \
+ /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/include/Cell.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
