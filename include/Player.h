@@ -13,10 +13,13 @@ class Player
         int property_number = 0;
         std::string property[24];
         int _index;
+        int _position;
         int _balance = 100;
         std::string position = "";
 
     public:
+
+        Player();
 
         Player(int index);
 
@@ -24,7 +27,11 @@ class Player
 
         void printProperty();
         
+        void setPosition(int position);
+
         int getBalance();
+
+        int getPosition();
 
         int getIndex() const;
 
@@ -39,6 +46,8 @@ class Player
         virtual bool buyCell(int price, Cell cell);
 
         virtual bool buyHouse(Cell cell);
+        
+        virtual bool getNextMove();
 
 };
 

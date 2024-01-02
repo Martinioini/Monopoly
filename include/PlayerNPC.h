@@ -15,6 +15,8 @@ class PlayerNPC : public Player
         bool buyCell(int price, Cell cell) override;
 
         bool buyHouse(Cell cell) override;
+
+        bool getNextMove() override;
 };
 
 

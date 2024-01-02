@@ -1,4 +1,5 @@
 #include "PlayerNPC.h"
+#include <random>
 
 PlayerNPC::PlayerNPC(int index) : Player(index)
 {}
@@ -62,4 +63,12 @@ bool PlayerNPC::buyHouse(Cell cell)
     return false;
 }
 
+bool PlayerNPC::getNextMove()
+{
+    std::random_device rd;
+    std::mt19937 gen(rd());
 
+    std::uniform_int_distribution<int> dist(1, 4);
+    int possibility = dist(gen);
+    return possibility == 1;
+}

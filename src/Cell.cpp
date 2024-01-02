@@ -1,6 +1,5 @@
 #include "Cell.h"
 
-
 Cell::Cell()
 {
     house_level = 0;
@@ -46,6 +45,7 @@ void Cell::increaseHouseLevel()
 void Cell::deleteOwner()
 {
     owner = 0;
+    house_level = 0;
     purchased = false;
 }
 
@@ -84,11 +84,16 @@ void Cell::setCategory(int c)
 
 std::string Cell::toStringHouse()
 {
-    if( house_level == 0)
+    if(house_level == 0 || house_level == 1)
+    {
         return " ";
+    }
     else
-        if (house_level == 1)
+    {
+        if (house_level == 2){
             return "*";
+        }
+    }
     return "^";
 }
 

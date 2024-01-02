@@ -207,5 +207,18 @@ void GameField::removePlayer(int position, int playerIndex)
     path[position].removePlayer(playerIndex);
 }
 
+Cell GameField::getCell(int index)
+{
+    return path[index];
+}
 
-
+void GameField::removePlayerProperties(int playerIndex)
+{
+    for (int i = 0; i < 28; i++)
+    {
+        if (path[i].getOwnerIndex() == playerIndex)
+        {
+            path[i].deleteOwner();
+        }
+    }
+}

@@ -17,17 +17,19 @@ class GameField
     
         GameField();  
 
-        void setPosition();
-
         void generatePath();     //generate the random number of cells in the path following constraints
 
         void printMap();
 
         void setCell();
 
+        void removePlayerProperties(int playerIndex);
+
         void setPlayerCell(int position, int playerIndex);
 
         void removePlayer(int position, int playerIndex);
+
+        Cell getCell(int index);
    
         static constexpr int numberOfEconomics = 8;     //number economics houses    
         static constexpr int numberOfStandards = 10;    //number of standard houses

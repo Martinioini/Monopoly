@@ -1,9 +1,14 @@
 #include "Player.h"
 #include <random>
 
+Player::Player()
+{
+}
+
 Player::Player(int index)
 {
     _index = index;
+    _position = 0;
 }
 
 void Player::addProperty(std::string s)
@@ -25,6 +30,16 @@ void Player::printProperty()
             std::cout << property[i] << ", ";
         }
     }
+}
+
+void Player::setPosition(int position)
+{
+    _position = position;
+}
+
+int Player::getPosition()
+{
+    return _position;
 }
 
 int Player::getBalance()
@@ -117,5 +132,15 @@ bool Player::buyHouse(Cell cell)
     return false;
 }
 
-
-
+bool Player::getNextMove()
+{
+    std::string response = "";
+    do {
+        std::cin >> response;
+        if(response != "si" && response != "no")
+        {
+            std::cout << "Input invalido, rispondi con si o no" << std::endl;
+        }
+    } while (response != "si" && response != "no");
+    return response == "si";
+}

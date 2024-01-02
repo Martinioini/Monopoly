@@ -10,8 +10,8 @@ class Cell
     private:
         
         bool purchased;          //stato di vendita
-        std::string category;    //categoria C, S, L, P, void
-        int house_level;         //livello immobile 0(nessuna casa), 1(casa normale), 2(albergo)
+        std::string category;    //categoria E, S, L, P, void
+        int house_level;         //livello immobile 0(nessuna casa), 1(terreno), 2(casa), 3(albergo)
         int owner;               //player propetario, se > 4 allora non acquisita
         std::string position;
         std::list<int> players;
