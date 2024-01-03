@@ -1,22 +1,22 @@
-#include "Player.h"
+#include "PlayerHuman.h"
 #include <random>
 
-Player::Player()
+PlayerHuman::PlayerHuman()
 {
 }
 
-Player::Player(int index)
+PlayerHuman::PlayerHuman(int index)
 {
     _index = index;
     _position = 0;
 }
 
-void Player::addProperty(std::string s)
+void PlayerHuman::addProperty(std::string s)
 {
     property[property_number++] = s;
 }
 
-void Player::printProperty()
+void PlayerHuman::printProperty()
 {
     std::cout << "Giocatore " << _index << ": ";
     for (int i = 0; i < property_number; i++)
@@ -32,44 +32,44 @@ void Player::printProperty()
     }
 }
 
-void Player::setPosition(int position)
+void PlayerHuman::setPosition(int position)
 {
     _position = position;
 }
 
-int Player::getPosition()
+int PlayerHuman::getPosition()
 {
     return _position;
 }
 
-int Player::getBalance()
+int PlayerHuman::getBalance()
 {
     return _balance;
 }
 
-int Player::getIndex() const
+int PlayerHuman::getIndex()
 {
     return _index;
 }
 
-bool Player::payTo(int credit, Player p)
+bool PlayerHuman::payTo(int credit, Player* p)
 {
     if(hasBalance(credit))
     {
         _balance -= credit;
-        p.addMoney(credit);
+        p->addMoney(credit);
         return true;
     }
-    p.addMoney(_balance);
+    p->addMoney(_balance);
     return false;
 }
 
-void Player::addMoney(int money)
+void PlayerHuman::addMoney(int money)
 {
     _balance += money;
 }
 
-int Player::throwDice()
+int PlayerHuman::throwDice()
 {
     // Inizializza un generatore di numeri casuali
     std::random_device rd;
@@ -84,12 +84,12 @@ int Player::throwDice()
     return dice1 + dice2;
 }
 
-bool Player::hasBalance(int price)
+bool PlayerHuman::hasBalance(int price)
 {
     return price < _balance;
 }
 
-bool Player::buyCell(int price, Cell cell) 
+bool PlayerHuman::buyCell(int price, Cell cell) 
 {
     if(hasBalance(price))
     {
@@ -101,7 +101,7 @@ bool Player::buyCell(int price, Cell cell)
     return false;
 }
 
-bool Player::buyHouse(Cell cell)
+bool PlayerHuman::buyHouse(Cell cell)
 {
     if(cell.getCategory() == "E")
     {
@@ -132,9 +132,10 @@ bool Player::buyHouse(Cell cell)
     return false;
 }
 
-bool Player::getNextMove()
+bool PlayerHuman::getNextMove()
 {
     std::string response = "";
+    std::cout << "Vuoi comprare o migliorare la proprieta'?" << std::endl;
     do {
         std::cin >> response;
         if(response != "si" && response != "no")

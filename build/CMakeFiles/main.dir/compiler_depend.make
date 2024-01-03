@@ -204,9 +204,13 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/bits/stl_queue.h \
   /usr/include/c++/11/bits/uses_allocator.h \
-  ../include/PlayerNPC.h \
-  ../include/Player.h
+  ../include/Player.h \
+  ../include/PlayerHuman.h \
+  ../include/Player.h \
+  ../include/PlayerNPC.h
 
+
+../include/PlayerHuman.h:
 
 ../include/Player.h:
 

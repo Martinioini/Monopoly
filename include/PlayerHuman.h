@@ -1,12 +1,13 @@
-#ifndef PLAYERNPC_H
-#define PLAYERNPC_H
+#ifndef PLAYERHUMAN_H
+#define PLAYERHUMAN_H
 
 #include "Player.h"
 #include <iostream>
 #include <string>
+#include "Cell.h"
+#include <vector>
 
-
-class PlayerNPC : public Player
+class PlayerHuman : public Player
 {
     private:
 
@@ -16,10 +17,12 @@ class PlayerNPC : public Player
         int _position;
         int _balance = 100;
         std::string position = "";
-    
+
     public:
 
-        PlayerNPC(int index);
+        PlayerHuman();
+
+        PlayerHuman(int index);
 
         void addProperty(std::string s);
 
@@ -41,14 +44,14 @@ class PlayerNPC : public Player
 
         void addMoney(int money);
 
-        virtual bool buyCell(int price, Cell cell);
+        bool buyCell(int price, Cell cell);
 
-        virtual bool buyHouse(Cell cell);
+        bool buyHouse(Cell cell);
         
-        virtual bool getNextMove();
-  
+        bool getNextMove();
+
 };
 
 
 
-#endif //PLAYERNPC_H
+#endif //PLAYERHUMAN_H

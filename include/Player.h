@@ -8,46 +8,35 @@
 
 class Player
 {
-    protected:
-
-        int property_number = 0;
-        std::string property[24];
-        int _index;
-        int _position;
-        int _balance = 100;
-        std::string position = "";
+    
 
     public:
 
-        Player();
+        virtual void addProperty(std::string s) = 0;
 
-        Player(int index);
-
-        void addProperty(std::string s);
-
-        void printProperty();
+        virtual void printProperty() = 0;
         
-        void setPosition(int position);
+        virtual void setPosition(int position) = 0;
 
-        int getBalance();
+        virtual int getBalance() = 0;
 
-        int getPosition();
+        virtual int getPosition() = 0;
 
-        int getIndex() const;
+        virtual int getIndex() = 0;
 
-        bool payTo(int credit, Player p);
+        virtual bool payTo(int credit, Player* p) = 0;
 
-        int throwDice();
+        virtual int throwDice() = 0;
 
-        bool hasBalance(int price);     
+        virtual bool hasBalance(int price) = 0;     
 
-        void addMoney(int money);
+        virtual void addMoney(int money) = 0;
 
-        virtual bool buyCell(int price, Cell cell);
+        virtual bool buyCell(int price, Cell cell) = 0;
 
-        virtual bool buyHouse(Cell cell);
+        virtual bool buyHouse(Cell cell) = 0;
         
-        virtual bool getNextMove();
+        virtual bool getNextMove() = 0;
 
 };
 

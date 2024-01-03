@@ -370,8 +370,9 @@ CMakeFiles/Monopoly.dir/src/GameField.cpp.o: ../src/GameField.cpp \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/list.tcc
 
-CMakeFiles/Monopoly.dir/src/Player.cpp.o: ../src/Player.cpp \
+CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.o: ../src/PlayerHuman.cpp \
   /usr/include/stdc-predef.h \
+  ../include/PlayerHuman.h \
   ../include/Player.h \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -792,8 +793,6 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 
 /usr/include/c++/11/limits:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/c++/11/bits/random.h:
@@ -820,7 +819,9 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 
 ../include/Player.h:
 
-../src/Player.cpp:
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+../include/PlayerHuman.h:
 
 /usr/include/c++/11/bits/stl_list.h:
 
@@ -949,6 +950,8 @@ CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o: ../src/PlayerNPC.cpp \
 /usr/include/c++/11/cstdlib:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+../src/PlayerHuman.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 

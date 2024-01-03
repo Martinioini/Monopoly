@@ -1,8 +1,8 @@
 CMakeFiles/Monopoly.dir/src/GameField.cpp.o: \
- /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/src/GameField.cpp \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/src/GameField.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/include/GameField.h \
- /mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/include/Cell.h \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/GameField.h \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/Cell.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

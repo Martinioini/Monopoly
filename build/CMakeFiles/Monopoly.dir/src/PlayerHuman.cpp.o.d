@@ -1,6 +1,7 @@
-CMakeFiles/Monopoly.dir/src/Player.cpp.o: \
- /mnt/c/Users/alema/Desktop/cppPr/Monopoly/src/Player.cpp \
+CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.o: \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/src/PlayerHuman.cpp \
  /usr/include/stdc-predef.h \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/PlayerHuman.h \
  /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/Player.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

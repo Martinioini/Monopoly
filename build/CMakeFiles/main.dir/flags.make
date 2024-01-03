@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/Edin/OneDrive/Desktop/negro/Monopoly/include
+CXX_INCLUDES = -I/mnt/c/Users/alema/Desktop/cppPr/Monopoly/include
 
 CXX_FLAGS = -std=gnu++11
 

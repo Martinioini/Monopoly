@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,libMonopoly.so -o libMonopoly.so CMakeFiles/Monopoly.dir/src/Cell.cpp.o CMakeFiles/Monopoly.dir/src/GameField.cpp.o CMakeFiles/Monopoly.dir/src/Player.cpp.o CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o 
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libMonopoly.so -o libMonopoly.so CMakeFiles/Monopoly.dir/src/Cell.cpp.o CMakeFiles/Monopoly.dir/src/GameField.cpp.o CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.o CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o 
