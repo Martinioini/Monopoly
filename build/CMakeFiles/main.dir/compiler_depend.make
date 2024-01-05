@@ -204,6 +204,14 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/bits/stl_queue.h \
   /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
   ../include/Player.h \
   ../include/PlayerHuman.h \
   ../include/Player.h \
@@ -214,11 +222,21 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../include/Player.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
 /usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/11/vector:
 
@@ -400,9 +418,13 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/ostream:
 
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/linux/close_range.h:
 
 /usr/include/c++/11/debug/assertions.h:
 
@@ -533,6 +555,8 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/cctype:
+
+/usr/include/unistd.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 

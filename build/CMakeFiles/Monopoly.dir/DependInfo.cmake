@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/alema/Desktop/cppPr/Monopoly/src/Cell.cpp" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o.d"
-  "/mnt/c/Users/alema/Desktop/cppPr/Monopoly/src/GameField.cpp" "CMakeFiles/Monopoly.dir/src/GameField.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/GameField.cpp.o.d"
-  "/mnt/c/Users/alema/Desktop/cppPr/Monopoly/src/PlayerHuman.cpp" "CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.o.d"
-  "/mnt/c/Users/alema/Desktop/cppPr/Monopoly/src/PlayerNPC.cpp" "CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o.d"
+  "/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/src/Cell.cpp" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/Cell.cpp.o.d"
+  "/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/src/GameField.cpp" "CMakeFiles/Monopoly.dir/src/GameField.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/GameField.cpp.o.d"
+  "/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/src/PlayerHuman.cpp" "CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.o.d"
+  "/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/src/PlayerNPC.cpp" "CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o" "gcc" "CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o.d"
   )
 
 # Targets to which this target links.
