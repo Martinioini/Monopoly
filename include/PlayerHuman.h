@@ -15,7 +15,7 @@ class PlayerHuman : public Player
         std::string property[24];
         int _index;
         int _position;
-        int _balance = 100;
+        int _balance;
         std::string position = "";
 
     public:
@@ -24,31 +24,31 @@ class PlayerHuman : public Player
 
         PlayerHuman(int index);
 
-        void addProperty(std::string s);
+        void addProperty(std::string s) override;
 
-        void printProperty();
+        void printProperty() override;
         
-        void setPosition(int position);
+        void setPosition(int position) override;
 
-        int getBalance();
+        int getBalance() override;
 
-        int getPosition();
+        int getPosition() override;
 
-        int getIndex();
+        int getIndex() override;
 
-        bool payTo(int credit, Player* p);
+        bool payTo(int credit, Player* p) override;
 
-        int throwDice();
+        int throwDice() override;
 
-        bool hasBalance(int price);     
+        bool hasBalance(int price) override;     
 
-        void addMoney(int money);
+        void addMoney(int money) override;
 
-        bool buyCell(int price, Cell cell);
+        bool buyCell(int price, Cell* cell) override;
 
-        bool buyHouse(Cell cell);
+        bool buyHouse(Cell* cell) override;
         
-        bool getNextMove();
+        bool getNextMove() override;
 
 };
 

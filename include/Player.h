@@ -32,9 +32,9 @@ class Player
 
         virtual void addMoney(int money) = 0;
 
-        virtual bool buyCell(int price, Cell cell) = 0;
+        virtual bool buyCell(int price, Cell* cell) = 0;
 
-        virtual bool buyHouse(Cell cell) = 0;
+        virtual bool buyHouse(Cell* cell) = 0;
         
         virtual bool getNextMove() = 0;
 

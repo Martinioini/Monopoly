@@ -84,17 +84,17 @@ void Cell::setCategory(int c)
 
 std::string Cell::toStringHouse()
 {
-    if(house_level == 0 || house_level == 1)
+    if(house_level == 1)
     {
-        return " ";
+        return "*";
     }
     else
     {
         if (house_level == 2){
-            return "*";
+            return "^";
         }
     }
-    return "^";
+    return " ";
 }
 
 void Cell::addPlayer(int player) 

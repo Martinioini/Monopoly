@@ -18,52 +18,52 @@ void GameField::setCell()
             switch(i)
             {
                 case 0:
-                    path[j].setPosition("A" + std::to_string(j));
+                    path[j].setPosition("A" + std::to_string(j+1));
                     break;
                 case 1:
                     if(j == 0)
-                        path[j].setPosition("B1");
+                        path[27].setPosition("B1");
                     else 
                         if(j == 7)
-                            path[j].setPosition("B8");
+                            path[8].setPosition("B8");
                     break; 
                 case 2:
                     if(j == 0)
-                        path[j].setPosition("C1");
+                        path[26].setPosition("C1");
                     else 
                         if(j == 7)
-                            path[j].setPosition("C8");
+                            path[9].setPosition("C8");
                     break; 
                 case 3:
                     if(j == 0)
-                        path[j].setPosition("D1");
+                        path[25].setPosition("D1");
                     else 
                         if(j == 7)
-                            path[j].setPosition("D8");
+                            path[10].setPosition("D8");
                     break; 
                 case 4:
                     if(j == 0)
-                        path[j].setPosition("E1");
+                        path[24].setPosition("E1");
                     else 
                         if(j == 7)
-                            path[j].setPosition("E8");
+                            path[11].setPosition("E8");
                     break; 
                 case 5:
                     if(j == 0)
-                        path[j].setPosition("F1");
+                        path[23].setPosition("F1");
                     else 
                         if(j == 7)
-                            path[j].setPosition("F8");
+                            path[12].setPosition("F8");
                     break; 
                 case 6:
                     if(j == 0)
-                        path[j].setPosition("G1");
+                        path[22].setPosition("G1");
                     else 
                         if(j == 7)
-                            path[j].setPosition("G8");
+                            path[13].setPosition("G8");
                     break; 
                 case 7:
-                    path[j].setPosition("A" + std::to_string(j));
+                    path[28-(7+j)].setPosition("A" + std::to_string(j+1));
                     break;
             }
         }
@@ -207,9 +207,9 @@ void GameField::removePlayer(int position, int playerIndex)
     path[position].removePlayer(playerIndex);
 }
 
-Cell GameField::getCell(int index)
+Cell* GameField::getCell(int index)
 {
-    return path[index];
+    return path + index;
 }
 
 void GameField::removePlayerProperties(int playerIndex)

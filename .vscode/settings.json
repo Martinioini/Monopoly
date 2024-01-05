@@ -106,6 +106,16 @@
     "xmemory": "cpp",
     "xstring": "cpp",
     "xtr1common": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "algorithm": "cpp",
+    "array": "cpp",
+    "deque": "cpp",
+    "optional": "cpp",
+    "queue": "cpp",
+    "ranges": "cpp",
+    "span": "cpp",
+    "vector": "cpp",
+    "list": "cpp",
+    "random": "cpp"
   }
 }

@@ -29,7 +29,7 @@ class GameField
 
         void removePlayer(int position, int playerIndex);
 
-        Cell getCell(int index);
+        Cell* getCell(int index);
    
         static constexpr int numberOfEconomics = 8;     //number economics houses    
         static constexpr int numberOfStandards = 10;    //number of standard houses

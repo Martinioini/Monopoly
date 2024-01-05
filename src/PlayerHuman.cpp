@@ -3,12 +3,14 @@
 
 PlayerHuman::PlayerHuman()
 {
+    _balance = 100;
 }
 
 PlayerHuman::PlayerHuman(int index)
 {
     _index = index;
     _position = 0;
+    _balance = 100;
 }
 
 void PlayerHuman::addProperty(std::string s)
@@ -89,43 +91,43 @@ bool PlayerHuman::hasBalance(int price)
     return price < _balance;
 }
 
-bool PlayerHuman::buyCell(int price, Cell cell) 
+bool PlayerHuman::buyCell(int price, Cell* cell) 
 {
     if(hasBalance(price))
     {
         _balance -= price;
-        cell.setOwner(_index);
-        cell.setPurchase();
+        cell->setOwner(_index);
+        cell->setPurchase();
         return true;
     }
     return false;
 }
 
-bool PlayerHuman::buyHouse(Cell cell)
+bool PlayerHuman::buyHouse(Cell* cell)
 {
-    if(cell.getCategory() == "E")
+    if(cell->getCategory() == "E")
     {
         if(hasBalance(3))
         {
             _balance -= 3;
-            cell.increaseHouseLevel();
+            cell->increaseHouseLevel();
             return true;
         }
     }
-    else if(cell.getCategory() == "S")
+    else if(cell->getCategory() == "S")
     {
         if(hasBalance(5))
         {
             _balance -= 5;
-            cell.increaseHouseLevel();
+            cell->increaseHouseLevel();
             return true;
         }
     }
-    else if(cell.getCategory() == "L"){
+    else if(cell->getCategory() == "L"){
         if(hasBalance(10))
         {
             _balance -= 10;
-            cell.increaseHouseLevel();
+            cell->increaseHouseLevel();
             return true;
         }
     }

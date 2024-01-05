@@ -1,10 +1,16 @@
 #include "PlayerNPC.h"
 #include <random>
 
+PlayerNPC::PlayerNPC()
+{
+    _balance = 100;
+}
+
 PlayerNPC::PlayerNPC(int index)
 {
     _index = index;
     _position = 0;
+    _balance = 100;
 }
 
 void PlayerNPC::addProperty(std::string s)
@@ -85,7 +91,7 @@ bool PlayerNPC::hasBalance(int price)
     return price < _balance;
 }
 
-bool PlayerNPC::buyCell(int price, Cell cell)    //returna true se andato a buon fine e false altrimenti
+bool PlayerNPC::buyCell(int price, Cell* cell)    //returna true se andato a buon fine e false altrimenti
 {
     srand (((unsigned) time(NULL)));
     int random = 1 + (rand() % 4);
@@ -95,8 +101,8 @@ bool PlayerNPC::buyCell(int price, Cell cell)    //returna true se andato a buon
         if(hasBalance(price))
         {
             _balance -= price;
-            cell.setOwner(_index);
-            cell.setPurchase();
+            cell->setOwner(_index);
+            cell->setPurchase();
             return true;
         }
     }
@@ -104,39 +110,39 @@ bool PlayerNPC::buyCell(int price, Cell cell)    //returna true se andato a buon
     return false;
 }
 
-bool PlayerNPC::buyHouse(Cell cell)
+bool PlayerNPC::buyHouse(Cell* cell)
 {
     srand (((unsigned) time(NULL)));
     int random = 1 + (rand() % 4);
     
     if(random == 1)
     {
-        if(cell.getCategory() == "E")
+        if(cell->getCategory() == "E")
         {
             if(hasBalance(3))
             {
                 _balance -= 3;
-                cell.increaseHouseLevel();
+                cell->increaseHouseLevel();
                 return true;
             }
         }
         
-        else if(cell.getCategory() == "S")
+        else if(cell->getCategory() == "S")
         {
             if(hasBalance(5))
             {
                 _balance -= 5;
-                cell.increaseHouseLevel();
+                cell->increaseHouseLevel();
                 return true;
             }
         }
 
-        else if(cell.getCategory() == "L")
+        else if(cell->getCategory() == "L")
         {
             if(hasBalance(10))
             {
                 _balance -= 10;
-                cell.increaseHouseLevel();
+                cell->increaseHouseLevel();
                 return true;
             }
         }
