@@ -1,8 +1,7 @@
-CMakeFiles/Monopoly.dir/src/Map.cpp.o: \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/Map.cpp \
+CMakeFiles/Monopoly.dir/src/Player.cpp.o: \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/src/Player.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Map.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Cell.h \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/Player.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,8 +145,28 @@ CMakeFiles/Monopoly.dir/src/Map.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/list \
- /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/istream.tcc \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/Cell.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/list.tcc
+ /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/random \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/limits /usr/include/c++/11/bits/random.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+ /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h

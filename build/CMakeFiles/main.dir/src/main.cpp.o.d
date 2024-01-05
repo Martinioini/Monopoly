@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/src/main.cpp \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -144,10 +144,13 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Map.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Cell.h \
- /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/GameField.h \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/Cell.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
@@ -159,5 +162,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/bits/stl_queue.h \
  /usr/include/c++/11/bits/uses_allocator.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/PlayerNPC.h \
- /mnt/c/Users/alema/Desktop/cpp/Monopoly/include/Player.h
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/Player.h \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/PlayerHuman.h \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/Player.h \
+ /mnt/c/Users/alema/Desktop/cppPr/Monopoly/include/PlayerNPC.h

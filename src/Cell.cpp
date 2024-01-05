@@ -1,12 +1,10 @@
 #include "Cell.h"
 
-
 Cell::Cell()
 {
     house_level = 0;
     purchased = false;
     owner = 0;
-    numberOfPlayers = 0;
 }
 
 void Cell::setPosition(std::string s)
@@ -47,6 +45,7 @@ void Cell::increaseHouseLevel()
 void Cell::deleteOwner()
 {
     owner = 0;
+    house_level = 0;
     purchased = false;
 }
 
@@ -85,84 +84,47 @@ void Cell::setCategory(int c)
 
 std::string Cell::toStringHouse()
 {
-    if( house_level == 0)
+    if(house_level == 0 || house_level == 1)
+    {
         return " ";
+    }
     else
-        if (house_level == 1)
+    {
+        if (house_level == 2){
             return "*";
+        }
+    }
     return "^";
 }
 
 void Cell::addPlayer(int player) 
 {
-    if(player_index[0] == 0)
-    {
-        player_index[0] = player;
-    }
-        
-    else if (player_index[1] == 0)
-    {
-        player_index[1] = player;
-    }
-        
-    else if (player_index[2] == 0)
-    {
-        player_index[2] = player;
-    }
-        
-    else
-    {
-        player_index[3] = player;
-    }
+    players.push_back(player);
         
 }
 
 void Cell::removePlayer(int player)
 {
-    int i = 0;
-    do
-    {
-        if(player_index[i] == player)
-        {
-            player_index[i] = 0;
-        }
-            
-    } while(player_index[i - 1] != player);
-}
-
-int Cell::getPlayer(int index)
-{
-    return player_index[index];
-}
-
-int Cell::getNumberOfPlayers()
-{
-    return  numberOfPlayers;
+    players.remove(player);
 }
 
 std::ostream& operator<<(std::ostream& os, Cell& cell) 
 {
-    if(cell.getNumberOfPlayers() == 0)
+    if(cell.players.size() == 0)
     {
         os << "|" << cell.getCategory() << cell.toStringHouse() << "|";
         return os;
     }
-    else if(cell.getNumberOfPlayers() == 1)
-    {
-        os << "|" << cell.getCategory() << cell.toStringHouse() << cell.getPlayer(0) << "|";
-        return os;
-    }
+
     else
     {
-        os << "|" << cell.getCategory() << cell.toStringHouse() ;
-        for(int i = 0; i < cell.getNumberOfPlayers(); i++)
+        os << "|" << cell.getCategory() << cell.toStringHouse();
+        for(int x : cell.players)
         {
-            os << " " << cell.getPlayer(i);
+            os << x;    
         }
         os << "|";
-        return os;
+        return os;     
     }
-
-
 }
 

@@ -1,15 +1,15 @@
-#include "Map.h"
+#include "GameField.h"
 #include <iostream>
 #include <string>
 #include <cstdlib>
 
 /// @brief 
-Map::Map()
+GameField::GameField()
 {
     generatePath();
 }
 
-void Map::setCell()
+void GameField::setCell()
 {
     for(int i = 0 ; i < 8 ; i++)
     {
@@ -70,7 +70,7 @@ void Map::setCell()
     }
 }
 
-void Map::generatePath()
+void GameField::generatePath()
 {
     srand (((unsigned) time(NULL)));
     int e = 0;
@@ -123,7 +123,7 @@ void Map::generatePath()
     }
 }
 
-void Map::printMap()
+void GameField::printMap()
 {
     for(int i = 0 ; i < 8 ; i++)
     {
@@ -197,15 +197,28 @@ void Map::printMap()
     }
 }
 
-void Map::setPlayerCell(int position, int playerIndex)
+void GameField::setPlayerCell(int position, int playerIndex)
 {
     path[position].addPlayer(playerIndex);
 }
 
-void Map::removePlayer(int position, int playerIndex)
+void GameField::removePlayer(int position, int playerIndex)
 {
     path[position].removePlayer(playerIndex);
 }
 
+Cell GameField::getCell(int index)
+{
+    return path[index];
+}
 
-
+void GameField::removePlayerProperties(int playerIndex)
+{
+    for (int i = 0; i < 28; i++)
+    {
+        if (path[i].getOwnerIndex() == playerIndex)
+        {
+            path[i].deleteOwner();
+        }
+    }
+}

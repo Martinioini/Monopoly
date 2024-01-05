@@ -4,40 +4,40 @@
 #include <iostream>
 #include <string>
 #include "Cell.h"
+#include <vector>
 
 class Player
 {
-    protected:
-
-        int property_number = 0;
-        std::string property[24];
-        int _index;
-        int _balance = 100;
-        std::string position = "";
+    
 
     public:
 
-        Player(int index);
+        virtual void addProperty(std::string s) = 0;
 
-        void addProperty(std::string s);
-
-        void printProperty();
+        virtual void printProperty() = 0;
         
-        int getBalance();
+        virtual void setPosition(int position) = 0;
 
-        int getIndex();
+        virtual int getBalance() = 0;
 
-        void payTo(int credit, Player p);
+        virtual int getPosition() = 0;
 
-        int throwDice();
+        virtual int getIndex() = 0;
 
-        bool hasBalance(int price);     
+        virtual bool payTo(int credit, Player* p) = 0;
 
-        void addMoney(int money);
+        virtual int throwDice() = 0;
 
-        virtual bool buyCell(int price, Cell cell);
+        virtual bool hasBalance(int price) = 0;     
 
-        virtual bool buyHouse(Cell cell);
+        virtual void addMoney(int money) = 0;
+
+        virtual bool buyCell(int price, Cell cell) = 0;
+
+        virtual bool buyHouse(Cell cell) = 0;
+        
+        virtual bool getNextMove() = 0;
+
 };
 
 

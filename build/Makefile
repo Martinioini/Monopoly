@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/alema/Desktop/cpp/Monopoly
+CMAKE_SOURCE_DIR = /mnt/c/Users/alema/Desktop/cppPr/Monopoly
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/alema/Desktop/cpp/Monopoly/build
+CMAKE_BINARY_DIR = /mnt/c/Users/alema/Desktop/cppPr/Monopoly/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles /mnt/c/Users/alema/Desktop/cpp/Monopoly/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/alema/Desktop/cppPr/Monopoly/build/CMakeFiles /mnt/c/Users/alema/Desktop/cppPr/Monopoly/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/alema/Desktop/cpp/Monopoly/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/alema/Desktop/cppPr/Monopoly/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -166,29 +166,77 @@ src/Cell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Cell.cpp.s
 .PHONY : src/Cell.cpp.s
 
-src/Map.o: src/Map.cpp.o
-.PHONY : src/Map.o
+src/GameField.o: src/GameField.cpp.o
+.PHONY : src/GameField.o
 
 # target to build an object file
-src/Map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Map.cpp.o
-.PHONY : src/Map.cpp.o
+src/GameField.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/GameField.cpp.o
+.PHONY : src/GameField.cpp.o
 
-src/Map.i: src/Map.cpp.i
-.PHONY : src/Map.i
+src/GameField.i: src/GameField.cpp.i
+.PHONY : src/GameField.i
 
 # target to preprocess a source file
-src/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Map.cpp.i
-.PHONY : src/Map.cpp.i
+src/GameField.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/GameField.cpp.i
+.PHONY : src/GameField.cpp.i
 
-src/Map.s: src/Map.cpp.s
-.PHONY : src/Map.s
+src/GameField.s: src/GameField.cpp.s
+.PHONY : src/GameField.s
 
 # target to generate assembly for a file
-src/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/Map.cpp.s
-.PHONY : src/Map.cpp.s
+src/GameField.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/GameField.cpp.s
+.PHONY : src/GameField.cpp.s
+
+src/PlayerHuman.o: src/PlayerHuman.cpp.o
+.PHONY : src/PlayerHuman.o
+
+# target to build an object file
+src/PlayerHuman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.o
+.PHONY : src/PlayerHuman.cpp.o
+
+src/PlayerHuman.i: src/PlayerHuman.cpp.i
+.PHONY : src/PlayerHuman.i
+
+# target to preprocess a source file
+src/PlayerHuman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.i
+.PHONY : src/PlayerHuman.cpp.i
+
+src/PlayerHuman.s: src/PlayerHuman.cpp.s
+.PHONY : src/PlayerHuman.s
+
+# target to generate assembly for a file
+src/PlayerHuman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/PlayerHuman.cpp.s
+.PHONY : src/PlayerHuman.cpp.s
+
+src/PlayerNPC.o: src/PlayerNPC.cpp.o
+.PHONY : src/PlayerNPC.o
+
+# target to build an object file
+src/PlayerNPC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.o
+.PHONY : src/PlayerNPC.cpp.o
+
+src/PlayerNPC.i: src/PlayerNPC.cpp.i
+.PHONY : src/PlayerNPC.i
+
+# target to preprocess a source file
+src/PlayerNPC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.i
+.PHONY : src/PlayerNPC.cpp.i
+
+src/PlayerNPC.s: src/PlayerNPC.cpp.s
+.PHONY : src/PlayerNPC.s
+
+# target to generate assembly for a file
+src/PlayerNPC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monopoly.dir/build.make CMakeFiles/Monopoly.dir/src/PlayerNPC.cpp.s
+.PHONY : src/PlayerNPC.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -227,9 +275,15 @@ help:
 	@echo "... src/Cell.o"
 	@echo "... src/Cell.i"
 	@echo "... src/Cell.s"
-	@echo "... src/Map.o"
-	@echo "... src/Map.i"
-	@echo "... src/Map.s"
+	@echo "... src/GameField.o"
+	@echo "... src/GameField.i"
+	@echo "... src/GameField.s"
+	@echo "... src/PlayerHuman.o"
+	@echo "... src/PlayerHuman.i"
+	@echo "... src/PlayerHuman.s"
+	@echo "... src/PlayerNPC.o"
+	@echo "... src/PlayerNPC.i"
+	@echo "... src/PlayerNPC.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
