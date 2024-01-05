@@ -11,13 +11,13 @@ class GameField
 
         static constexpr int mapLength = 28;
 
-        Cell path[mapLength];    //mappa
+        Cell path[mapLength];    //mappa -- commenti in italiano? ma che sono sti nabbi
 
     public:
     
         GameField();  
 
-        void generatePath();     //generate the random number of cells in the path following constraints
+        void generatePath();     //generate the random number of cells in the path following constraints -- adesso in inglese, good!
 
         void printMap();
 
@@ -36,5 +36,3 @@ class GameField
         static constexpr int numberOfLuxury = 6;        //number of luxury houses
 
 };
-
-#endif //GAMEFIELD_H

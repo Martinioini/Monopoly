@@ -5,7 +5,7 @@
 #include <queue>
 #include <utility>
 #include <typeinfo>
-#include <unistd.h>
+//#include <unistd.h>
 #include "Player.h"
 #include "PlayerHuman.h"
 #include "PlayerNPC.h"
@@ -30,7 +30,7 @@ bool start(GameField field)
 
 int main()
 {
-    GameField field;
+    GameField* field = new GameField();
     std::queue<Player*> players;
     Player* PlayersArr[4];
     
@@ -39,7 +39,7 @@ int main()
         return a.first < b.first;
     };
     std::priority_queue<std::pair<int, Player*>, std::vector<std::pair<int, Player*>>, decltype(compare)> pairList(compare);
-    bool isHuman = start(field);
+    bool isHuman = start(*field);
 
     if (isHuman)
     {
@@ -53,10 +53,10 @@ int main()
         PlayersArr[2] = Giocatore3;
         PlayersArr[3] = Giocatore4;
 
-        field.setPlayerCell(0, Giocatore1->getIndex());    //inizializza il gioco, inserendo i player nella casella P
-        field.setPlayerCell(0, Giocatore2->getIndex());
-        field.setPlayerCell(0, Giocatore3->getIndex());
-        field.setPlayerCell(0, Giocatore4->getIndex()); 
+        field->setPlayerCell(0, Giocatore1->getIndex());    //inizializza il gioco, inserendo i player nella casella P
+        field->setPlayerCell(0, Giocatore2->getIndex());
+        field->setPlayerCell(0, Giocatore3->getIndex());
+        field->setPlayerCell(0, Giocatore4->getIndex()); 
 
         int first = Giocatore1->throwDice();   // otteniamo i 4 tiri per capire l'ordine dei giocatori
         int second = Giocatore1->throwDice();
@@ -88,10 +88,10 @@ int main()
         PlayersArr[2] = Giocatore3;
         PlayersArr[3] = Giocatore4;
 
-        field.setPlayerCell(0, Giocatore1->getIndex()); 
-        field.setPlayerCell(0, Giocatore2->getIndex());
-        field.setPlayerCell(0, Giocatore3->getIndex());
-        field.setPlayerCell(0, Giocatore4->getIndex());
+        field->setPlayerCell(0, Giocatore1->getIndex()); 
+        field->setPlayerCell(0, Giocatore2->getIndex());
+        field->setPlayerCell(0, Giocatore3->getIndex());
+        field->setPlayerCell(0, Giocatore4->getIndex());
 
         int first = Giocatore1->throwDice();   // otteniamo i 4 tiri per capire l'ordine dei giocatori
         int second = Giocatore1->throwDice();
@@ -111,9 +111,9 @@ int main()
         }
     }
 
-    field.printMap();
-    sleep(2);
-    system("clear");
+    field->printMap();
+    //sleep(2);
+    system("clear"); // sul serio?
 
     while (players.size() > 1)
     {
@@ -130,10 +130,10 @@ int main()
             newPosition = newPosition % 28;
         }
 
-        field.removePlayer(playerPtr->getPosition(), playerPtr->getIndex());
+        field->removePlayer(playerPtr->getPosition(), playerPtr->getIndex());
         playerPtr->setPosition(newPosition);
-        field.setPlayerCell(playerPtr->getPosition(), playerPtr->getIndex());
-        Cell* currentCell = field.getCell(playerPtr->getPosition());
+        field->setPlayerCell(playerPtr->getPosition(), playerPtr->getIndex());
+        Cell* currentCell = field->getCell(playerPtr->getPosition());
         
 
         if (!currentCell->isPurchased())
@@ -180,7 +180,7 @@ int main()
                         if (playerPtr->hasBalance(2))
                         {
                             playerPtr->payTo(2, PlayersArr[currentCell->getOwnerIndex() - 1]);
-                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 2 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1] << "." << std::endl;
+                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 2 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
 
                         }
                         else
@@ -193,7 +193,7 @@ int main()
                         if (playerPtr->hasBalance(4))
                         {
                             playerPtr->payTo(4, PlayersArr[currentCell->getOwnerIndex() - 1]);
-                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 4 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1] << "." << std::endl;
+                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 4 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
 
                         }
                         else
@@ -206,7 +206,7 @@ int main()
                         if (playerPtr->hasBalance(7))
                         {
                             playerPtr->payTo(7, PlayersArr[currentCell->getOwnerIndex() - 1]);
-                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 7 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1] << "." << std::endl;
+                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 7 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
 
                         }
                         else
@@ -223,7 +223,7 @@ int main()
                         if (playerPtr->hasBalance(4))
                         {
                             playerPtr->payTo(4, PlayersArr[currentCell->getOwnerIndex() - 1]);
-                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 4 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1] << "." << std::endl;
+                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 4 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
 
                         }
                         else
@@ -236,7 +236,7 @@ int main()
                         if (playerPtr->hasBalance(8))
                         {
                             playerPtr->payTo(8, PlayersArr[currentCell->getOwnerIndex() - 1]);
-                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 8 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1] << "." << std::endl;
+                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 8 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
                         }
                         else
                         {
@@ -248,7 +248,7 @@ int main()
                         if (playerPtr->hasBalance(14))
                         {
                             playerPtr->payTo(14, PlayersArr[currentCell->getOwnerIndex() - 1]);
-                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 14 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1] << "." << std::endl;
+                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 14 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
                         }
                         else
                         {
@@ -267,12 +267,12 @@ int main()
         else
         {
             int indexLoser = playerPtr->getIndex();
-            field.removePlayerProperties(indexLoser);
-            field.removePlayer(playerPtr->getPosition(), indexLoser); //viene rimosso lo zesty loser
+            field->removePlayerProperties(indexLoser);
+            field->removePlayer(playerPtr->getPosition(), indexLoser); //viene rimosso lo zesty loser
         }
         players.pop();
-        field.printMap();
-        sleep(2);
+        field->printMap();
+        //sleep(2);
         system("clear");
     }
 }
