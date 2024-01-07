@@ -10,8 +10,6 @@ class PlayerNPC : public Player
 {
     private:
 
-        int property_number = 0;
-        std::string property[24];
         int _index;
         int _position;
         int _balance;
@@ -23,9 +21,7 @@ class PlayerNPC : public Player
 
         PlayerNPC(int index);
 
-        void addProperty(std::string s) override;
-
-        void printProperty() override;
+        void printProperty(GameField field) override;
         
         void setPosition(int position) override;
 

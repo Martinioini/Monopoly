@@ -2,19 +2,13 @@
 
 Cell::Cell()
 {
-    house_level = 0;
-    purchased = false;
+    house_level = -1;
     owner = 0;
 }
 
 void Cell::setPosition(std::string s)
 {
     position = s;
-}
-
-bool Cell::isPurchased()
-{
-    return purchased;
 }
 
 int Cell::getOwnerIndex()
@@ -45,19 +39,12 @@ void Cell::increaseHouseLevel()
 void Cell::deleteOwner()
 {
     owner = 0;
-    house_level = 0;
-    purchased = false;
-}
-
-void Cell::setPurchase()
-{
-    purchased = true;
+    house_level = -1;
 }
 
 void Cell::setOwner(int index)
 {
     owner = index;
-    purchased = true;
 }
 
 void Cell::setCategory(int c)

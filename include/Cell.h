@@ -9,7 +9,6 @@ class Cell
 {
     private:
         
-        bool purchased;          //stato di vendita
         std::string category;    //categoria E, S, L, P, void
         int house_level;         //livello immobile 0(nessuna casa), 1(terreno), 2(casa), 3(albergo)
         int owner;               //player propetario, se > 4 allora non acquisita
@@ -21,8 +20,6 @@ class Cell
         Cell();
 
         void setPosition(std::string s);
-
-        bool isPurchased();
 
         int getOwnerIndex();
 

@@ -13,23 +13,15 @@ PlayerNPC::PlayerNPC(int index)
     _balance = 100;
 }
 
-void PlayerNPC::addProperty(std::string s)
-{
-    property[property_number++] = s;
-}
-
-void PlayerNPC::printProperty()
+void PlayerNPC::printProperty(GameField field)
 {
     std::cout << "Giocatore " << _index << ": ";
-    for (int i = 0; i < property_number; i++)
+    for (int i = 0; i < 28; i++)
     {
-        if (i == (property_number - 1))
+        Cell* currentCell = field.getCell(i);
+        if (currentCell->getOwnerIndex() == _index)
         {
-            std::cout << property[i] << std::endl;
-        }
-        else
-        {
-            std::cout << property[i] << ", ";
+            std::cout << currentCell->getPosition() << std::endl;
         }
     }
 }
@@ -63,6 +55,7 @@ bool PlayerNPC::payTo(int credit, Player* p)
         return true;
     }
     p->addMoney(_balance);
+    _balance = 0;
     return false;
 }
 
@@ -102,7 +95,7 @@ bool PlayerNPC::buyCell(int price, Cell* cell)    //returna true se andato a buo
         {
             _balance -= price;
             cell->setOwner(_index);
-            cell->setPurchase();
+            cell->increaseHouseLevel();
             return true;
         }
     }
@@ -117,33 +110,36 @@ bool PlayerNPC::buyHouse(Cell* cell)
     
     if(random == 1)
     {
-        if(cell->getCategory() == "E")
+        if(cell->getHouseLevel() < 2)        
         {
-            if(hasBalance(3))
+            if(cell->getCategory() == "E")
             {
-                _balance -= 3;
-                cell->increaseHouseLevel();
-                return true;
+                if(hasBalance(3))
+                {
+                    _balance -= 3;
+                    cell->increaseHouseLevel();
+                    return true;
+                }
             }
-        }
-        
-        else if(cell->getCategory() == "S")
-        {
-            if(hasBalance(5))
+            
+            else if(cell->getCategory() == "S")
             {
-                _balance -= 5;
-                cell->increaseHouseLevel();
-                return true;
+                if(hasBalance(5))
+                {
+                    _balance -= 5;
+                    cell->increaseHouseLevel();
+                    return true;
+                }
             }
-        }
 
-        else if(cell->getCategory() == "L")
-        {
-            if(hasBalance(10))
+            else if(cell->getCategory() == "L")
             {
-                _balance -= 10;
-                cell->increaseHouseLevel();
-                return true;
+                if(hasBalance(10))
+                {
+                    _balance -= 10;
+                    cell->increaseHouseLevel();
+                    return true;
+                }
             }
         }
     }

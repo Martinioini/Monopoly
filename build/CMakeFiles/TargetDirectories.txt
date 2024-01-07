@@ -1,4 +1,4 @@
-/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/build/CMakeFiles/Monopoly.dir
-/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/build/CMakeFiles/main.dir
-/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/matti/Desktop/File Uni/Secondo Anno/Laboratorio di Programmazione/prova finale/Monopoly/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/matti/Desktop/Monopoly (1)/build/CMakeFiles/Monopoly.dir
+/mnt/c/Users/matti/Desktop/Monopoly (1)/build/CMakeFiles/main.dir
+/mnt/c/Users/matti/Desktop/Monopoly (1)/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/matti/Desktop/Monopoly (1)/build/CMakeFiles/rebuild_cache.dir

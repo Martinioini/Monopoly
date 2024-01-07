@@ -36,3 +36,5 @@ class GameField
         static constexpr int numberOfLuxury = 6;        //number of luxury houses
 
 };
+
+#endif //GAMEFIELD_H

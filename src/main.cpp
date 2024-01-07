@@ -1,14 +1,15 @@
 #include <iostream>
-#include "GameField.h"
 #include <string>
 #include <algorithm>
 #include <queue>
 #include <utility>
 #include <typeinfo>
-//#include <unistd.h>
+#include "GameField.h"
 #include "Player.h"
 #include "PlayerHuman.h"
 #include "PlayerNPC.h"
+
+
 
 bool start(GameField field)
 {
@@ -28,11 +29,41 @@ bool start(GameField field)
     return s == "si";
 }
 
+void showRanking(Player* PlayersArr[], int size)
+{
+    int arr_index[size];
+    int arr_balance[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        arr_index[i] = PlayersArr[i]->getIndex();
+        arr_balance[i] = PlayersArr[i]->getBalance();
+    }
+
+    for (int i = 0; i < size - 1; i++)
+    {
+        for (int j = i + 1; j < size; j++)
+        {
+            if (arr_balance[i] < arr_balance[j])
+            {
+                std::swap(arr_index[i], arr_index[j]);
+                std::swap(arr_balance[i], arr_balance[j]);
+            }
+        }
+    }
+
+    for (int i = 0; i < size; i++)
+    {
+        std::cout << i + 1 << "* - Giocatore " << arr_index[i] << " con un bilancio di " << arr_balance[i] << ";" << std::endl;
+    }
+}
+
 int main()
 {
     GameField* field = new GameField();
     std::queue<Player*> players;
     Player* PlayersArr[4];
+    int j = 0;
     
     auto compare = [](const std::pair<int, Player*>& a, const std::pair<int, Player*>& b) 
     {
@@ -114,8 +145,9 @@ int main()
     field->printMap();
     //sleep(2);
     system("clear"); // sul serio?
+    int turn_count = 0;
 
-    while (players.size() > 1)
+    while (players.size() > 1 && turn_count < 500)
     {
         bool hasMoney = true;
         Player* playerPtr = players.front();
@@ -136,7 +168,7 @@ int main()
         Cell* currentCell = field->getCell(playerPtr->getPosition());
         
 
-        if (!currentCell->isPurchased())
+        if (currentCell->getHouseLevel() == -1)
         {   
             
             bool choice = playerPtr->getNextMove();
@@ -159,64 +191,19 @@ int main()
         {
             if (currentCell->getOwnerIndex() == playerPtr->getIndex())
             {
-                if(currentCell->getHouseLevel() != 3)
+                if(currentCell->getHouseLevel() < 2)
                 {
                     bool choice = playerPtr->getNextMove();
                     if (choice) {
                         playerPtr->buyHouse(currentCell);
-                        currentCell->increaseHouseLevel();
-                        playerPtr->addProperty(currentCell->getCategory());
                         std::cout << "Il giocatore " << playerPtr->getIndex() << " ha comprato una casa. Il suo bilancio attuale e': " << playerPtr->getBalance() << "." << std::endl;
                     }
                 }
             }
 
-            else
+            else 
             {
                 if (currentCell->getHouseLevel() == 2)
-                {
-                    if (currentCell->getCategory() == "E")
-                    {
-                        if (playerPtr->hasBalance(2))
-                        {
-                            playerPtr->payTo(2, PlayersArr[currentCell->getOwnerIndex() - 1]);
-                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 2 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
-
-                        }
-                        else
-                        {
-                            hasMoney = false;
-                        }
-                    }
-                    else if (currentCell->getCategory() == "S")
-                    {
-                        if (playerPtr->hasBalance(4))
-                        {
-                            playerPtr->payTo(4, PlayersArr[currentCell->getOwnerIndex() - 1]);
-                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 4 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
-
-                        }
-                        else
-                        {
-                            hasMoney = false;
-                        }
-                    }
-                    else if (currentCell->getCategory() == "L")
-                    {
-                        if (playerPtr->hasBalance(7))
-                        {
-                            playerPtr->payTo(7, PlayersArr[currentCell->getOwnerIndex() - 1]);
-                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 7 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
-
-                        }
-                        else
-                        {
-                            hasMoney = false;
-                        }
-                    }
-                }
-
-                else
                 {
                     if (currentCell->getCategory() == "E")
                     {
@@ -237,6 +224,7 @@ int main()
                         {
                             playerPtr->payTo(8, PlayersArr[currentCell->getOwnerIndex() - 1]);
                             std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 8 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
+
                         }
                         else
                         {
@@ -249,6 +237,48 @@ int main()
                         {
                             playerPtr->payTo(14, PlayersArr[currentCell->getOwnerIndex() - 1]);
                             std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 14 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
+
+                        }
+                        else
+                        {
+                            hasMoney = false;
+                        }
+                    }
+                }
+
+                else if(currentCell->getHouseLevel() == 1)
+                {
+                    if (currentCell->getCategory() == "E")
+                    {
+                        if (playerPtr->hasBalance(2))
+                        {
+                            playerPtr->payTo(2, PlayersArr[currentCell->getOwnerIndex() - 1]);
+                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 2 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
+
+                        }
+                        else
+                        {
+                            hasMoney = false;
+                        }
+                    }
+                    else if (currentCell->getCategory() == "S")
+                    {
+                        if (playerPtr->hasBalance(4))
+                        {
+                            playerPtr->payTo(4, PlayersArr[currentCell->getOwnerIndex() - 1]);
+                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 4 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
+                        }
+                        else
+                        {
+                            hasMoney = false;
+                        }
+                    }
+                    else if (currentCell->getCategory() == "L")
+                    {
+                        if (playerPtr->hasBalance(7))
+                        {
+                            playerPtr->payTo(7, PlayersArr[currentCell->getOwnerIndex() - 1]);
+                            std::cout << "Il giocatore " << playerPtr->getIndex() << " pagato 7 al giocatore" << PlayersArr[currentCell->getOwnerIndex() - 1]->getIndex() << "." << std::endl;
                         }
                         else
                         {
@@ -273,6 +303,18 @@ int main()
         players.pop();
         field->printMap();
         //sleep(2);
-        system("clear");
+        //system("clear");
+        turn_count ++;
+    }
+
+    std::cout << "Esecuzione del gioco terminata." << std::endl;
+    std::cout << "Il classifica del gioco e\'" << std::endl;
+    showRanking(PlayersArr, players.size());
+
+    delete field;
+    for(int i = 0; i < 4; i++)
+    {
+        Player* temp = PlayersArr[i];
+        delete temp;
     }
 }

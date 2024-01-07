@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include "Cell.h"
+#include "GameField.h"
 #include <vector>
 
 class Player
@@ -12,9 +13,7 @@ class Player
 
     public:
 
-        virtual void addProperty(std::string s) = 0;
-
-        virtual void printProperty() = 0;
+        virtual void printProperty(GameField field) = 0;
         
         virtual void setPosition(int position) = 0;
 
